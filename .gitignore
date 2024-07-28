@@ -45,3 +45,4 @@ replay_*.log
 .idea
 build
 .github
+/src/main/generated/.cache/

@@ -1,5 +1,7 @@
 package com.kielson;
 
+import com.kielson.item.ModItemGroups;
+import com.kielson.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -10,5 +12,8 @@ public class KielsonsEnhancedCombat implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
-	public void onInitialize(){}
+	public void onInitialize(){
+		ModItems.registerModItems();
+		ModItemGroups.registerItemGroups();
+	}
 }

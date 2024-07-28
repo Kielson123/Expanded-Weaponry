@@ -1,3 +1,10 @@
 {
-  
+  "itemGroup.kielsons_enhanced_combat": "_Kielson's Enhanced Combat",
+  "item.kielsons_enhanced_combat.wooden_dagger": "Drewniany sztylet",
+  "item.kielsons_enhanced_combat.stone_dagger": "Kamienny sztylet",
+  "item.kielsons_enhanced_combat.iron_dagger": "Żelazny sztylet",
+  "item.kielsons_enhanced_combat.golden_dagger": "Złoty sztylet",
+  "item.kielsons_enhanced_combat.diamond_dagger": "Diamentowy sztylet",
+  "item.kielsons_enhanced_combat.netherite_dagger": "Netherytowy sztylet",
+  "item.kielsons_enhanced_combat.longbow": "Długi łuk"
 }

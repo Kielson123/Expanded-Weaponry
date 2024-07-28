@@ -1,3 +1,10 @@
 {
-
+  "itemGroup.kielsons_enhanced_combat": "_Kielson's Enhanced Combat",
+  "item.kielsons_enhanced_combat.wooden_dagger": "Wooden Dagger",
+  "item.kielsons_enhanced_combat.stone_dagger": "Stone Dagger",
+  "item.kielsons_enhanced_combat.iron_dagger": "Iron Dagger",
+  "item.kielsons_enhanced_combat.golden_dagger": "Golden Dagger",
+  "item.kielsons_enhanced_combat.diamond_dagger": "Diamond Dagger",
+  "item.kielsons_enhanced_combat.netherite_dagger": "Netherite Dagger",
+  "item.kielsons_enhanced_combat.longbow": "Longbow"
 }
