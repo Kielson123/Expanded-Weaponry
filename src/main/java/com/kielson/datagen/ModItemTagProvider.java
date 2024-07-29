@@ -18,7 +18,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         super(output, completableFuture);
     }
 
-    private static final TagKey<Item> DAGGERS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "daggers"));
+    public static final TagKey<Item> DAGGERS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "daggers"));
+    public static final TagKey<Item> SWEEPING_DISABLED = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "sweeping_disabled"));
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
@@ -29,5 +30,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.GOLDEN_DAGGER)
                 .add(ModItems.DIAMOND_DAGGER)
                 .add(ModItems.NETHERITE_DAGGER);
+
+        getOrCreateTagBuilder(SWEEPING_DISABLED)
+                .addOptionalTag(DAGGERS);
     }
 }

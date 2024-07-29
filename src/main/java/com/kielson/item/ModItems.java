@@ -1,9 +1,13 @@
 package com.kielson.item;
 
 import com.kielson.item.custom.DaggerItem;
+import com.mojang.serialization.Codec;
+import net.minecraft.component.ComponentType;
+import net.minecraft.component.DataComponentTypes;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.Settings;
 import net.minecraft.item.ToolMaterials;
+import net.minecraft.network.codec.PacketCodecs;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -11,7 +15,10 @@ import net.minecraft.util.Identifier;
 import static com.kielson.KielsonsEnhancedCombat.MOD_ID;
 
 public class ModItems {
+    //Custom components
+    public static final ComponentType<Boolean> TWO_HANDED = DataComponentTypes.register("two_handed", builder -> builder.codec(Codec.BOOL).packetCodec(PacketCodecs.BOOL));
 
+    //Items
     public static final Item WOODEN_DAGGER = register("wooden_dagger", new DaggerItem(ToolMaterials.WOOD, new Settings()));
     public static final Item STONE_DAGGER = register("stone_dagger", new DaggerItem(ToolMaterials.STONE, new Settings()));
     public static final Item IRON_DAGGER = register("iron_dagger", new DaggerItem(ToolMaterials.IRON, new Settings()));
