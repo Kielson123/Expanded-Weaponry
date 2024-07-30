@@ -19,6 +19,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     }
 
     public static final TagKey<Item> DAGGERS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "daggers"));
+    public static final TagKey<Item> CUSTOM_BOWS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "custom_bows"));
     public static final TagKey<Item> SWEEPING_DISABLED = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "sweeping_disabled"));
 
     @Override
@@ -31,7 +32,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.DIAMOND_DAGGER)
                 .add(ModItems.NETHERITE_DAGGER);
 
-        getOrCreateTagBuilder(SWEEPING_DISABLED)
-                .addOptionalTag(DAGGERS);
+        getOrCreateTagBuilder(CUSTOM_BOWS)
+                .add(ModItems.LONGBOW);
     }
 }

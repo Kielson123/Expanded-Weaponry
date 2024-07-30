@@ -20,7 +20,7 @@ public class ModItems {
     public static final Item DIAMOND_DAGGER = register("diamond_dagger", new DaggerItem(ToolMaterials.DIAMOND, new Settings()));
     public static final Item NETHERITE_DAGGER = register("netherite_dagger", new DaggerItem(ToolMaterials.NETHERITE, new Settings().fireproof()));
 
-    public static final Item LONGBOW = register("longbow", new CustomBow(10, 2, 3.75, new Settings().maxDamage(328)));
+    public static final Item LONGBOW = register("longbow", new CustomBow(8.5, 1.8, 3.75, new Settings().maxDamage(328)));
 
 
     public static Item register(String id, Item item) {

@@ -75,7 +75,7 @@ publishing {
 
 modrinth {
 	token = project.modrinth_token
-	projectId = "CVdyYsTz"
+	projectId = "q8rZUpjS"
 	versionNumber = String.valueOf(project.mod_version)
 	versionType = project.version_type
 	uploadFile = remapJar
