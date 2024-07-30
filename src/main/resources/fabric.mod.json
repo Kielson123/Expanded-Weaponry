@@ -19,6 +19,9 @@
 		],
 		"fabric-datagen": [
 			"com.kielson.datagen.KielsonsEnhancedCombatDataGenerator"
+		],
+		"client": [
+			"com.kielson.client.KielsonsEnhancedCombatClient"
 		]
 	},
 	"mixins": [

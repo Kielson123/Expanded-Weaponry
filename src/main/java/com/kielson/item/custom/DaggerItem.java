@@ -10,14 +10,11 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Identifier;
 
 import static com.kielson.KielsonsEnhancedCombat.MOD_ID;
-import static com.kielson.item.ModItems.TWO_HANDED;
 
 public class DaggerItem extends SwordItem {
 
     public DaggerItem(ToolMaterial toolMaterial, Settings settings) {
-        super(toolMaterial, settings.maxDamage((int) (toolMaterial.getDurability() * 0.85))
-                .component(DataComponentTypes.ATTRIBUTE_MODIFIERS, DaggerItem.createAttributeModifiers(toolMaterial))
-                .component(TWO_HANDED, Boolean.TRUE));
+        super(toolMaterial, settings.maxDamage((int) (toolMaterial.getDurability() * 0.85)).component(DataComponentTypes.ATTRIBUTE_MODIFIERS, DaggerItem.createAttributeModifiers(toolMaterial)));
     }
 
     public static AttributeModifiersComponent createAttributeModifiers(ToolMaterial material) {
