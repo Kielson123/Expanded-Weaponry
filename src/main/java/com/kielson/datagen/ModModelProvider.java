@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.Item;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -17,11 +18,11 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.WOODEN_DAGGER, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.STONE_DAGGER, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.IRON_DAGGER, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.GOLDEN_DAGGER, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.DIAMOND_DAGGER, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.NETHERITE_DAGGER, Models.HANDHELD);
+        for (Item item : ModItems.ITEMS_HANDHELD) {
+            itemModelGenerator.register(item, Models.HANDHELD);
+        }
+        for (Item item : ModItems.ITEMS_DEFAULT) {
+            itemModelGenerator.register(item, Models.GENERATED);
+        }
     }
 }

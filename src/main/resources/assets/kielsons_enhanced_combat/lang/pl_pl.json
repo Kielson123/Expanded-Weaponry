@@ -6,6 +6,13 @@
   "item.kielsons_enhanced_combat.golden_dagger": "Złoty sztylet",
   "item.kielsons_enhanced_combat.diamond_dagger": "Diamentowy sztylet",
   "item.kielsons_enhanced_combat.netherite_dagger": "Netherytowy sztylet",
-  "item.kielsons_enhanced_combat.longbow": "Długi łuk",
-  "item.modifiers.two_handed": "Oburęczny"
+
+  "item.kielsons_enhanced_combat.wooden_hammer": "Drewniany młot",
+  "item.kielsons_enhanced_combat.stone_hammer": "Kamienny młot",
+  "item.kielsons_enhanced_combat.iron_hammer": "Żelazny młot",
+  "item.kielsons_enhanced_combat.golden_hammer": "Złoty młot",
+  "item.kielsons_enhanced_combat.diamond_hammer": "Diamentowy młot",
+  "item.kielsons_enhanced_combat.netherite_hammer": "Netherytowy młot",
+
+  "item.kielsons_enhanced_combat.longbow": "Długi łuk"
 }

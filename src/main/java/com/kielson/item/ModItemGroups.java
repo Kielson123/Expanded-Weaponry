@@ -16,13 +16,21 @@ import static com.kielson.KielsonsEnhancedCombat.MOD_ID;
 public class ModItemGroups {
 
     public static final ItemGroup KIELSONS_ENHANCED_COMBAT = Registry.register(Registries.ITEM_GROUP, Identifier.of(MOD_ID, MOD_ID),
-        FabricItemGroup.builder().displayName(Text.translatable("itemGroup." + MOD_ID)).icon(() -> new ItemStack(ModItems.DIAMOND_DAGGER)).entries((displayContext, entries) -> {
+        FabricItemGroup.builder().displayName(Text.translatable("itemGroup." + MOD_ID)).icon(() -> new ItemStack(ModItems.GOLDEN_HAMMER)).entries((displayContext, entries) -> {
             entries.add(ModItems.WOODEN_DAGGER);
             entries.add(ModItems.STONE_DAGGER);
             entries.add(ModItems.IRON_DAGGER);
             entries.add(ModItems.GOLDEN_DAGGER);
             entries.add(ModItems.DIAMOND_DAGGER);
             entries.add(ModItems.NETHERITE_DAGGER);
+
+            entries.add(ModItems.WOODEN_HAMMER);
+            entries.add(ModItems.STONE_HAMMER);
+            entries.add(ModItems.IRON_HAMMER);
+            entries.add(ModItems.GOLDEN_HAMMER);
+            entries.add(ModItems.DIAMOND_HAMMER);
+            entries.add(ModItems.NETHERITE_HAMMER);
+
             entries.add(ModItems.LONGBOW);
 
         }).build());
@@ -37,6 +45,14 @@ public class ModItemGroups {
             content.addAfter(Items.NETHERITE_AXE, ModItems.IRON_DAGGER);
             content.addAfter(Items.NETHERITE_AXE, ModItems.STONE_DAGGER);
             content.addAfter(Items.NETHERITE_AXE, ModItems.WOODEN_DAGGER);
+
+            content.addAfter(ModItems.NETHERITE_DAGGER, ModItems.NETHERITE_HAMMER);
+            content.addAfter(ModItems.NETHERITE_DAGGER, ModItems.DIAMOND_HAMMER);
+            content.addAfter(ModItems.NETHERITE_DAGGER, ModItems.GOLDEN_HAMMER);
+            content.addAfter(ModItems.NETHERITE_DAGGER, ModItems.IRON_HAMMER);
+            content.addAfter(ModItems.NETHERITE_DAGGER, ModItems.STONE_HAMMER);
+            content.addAfter(ModItems.NETHERITE_DAGGER, ModItems.WOODEN_HAMMER);
+
             content.addAfter(Items.BOW, ModItems.LONGBOW);
         });
     }

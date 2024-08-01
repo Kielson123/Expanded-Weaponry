@@ -2,11 +2,11 @@
   "required": true,
   "package": "com.kielson.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [
-    "PlayerEntityMixin",
-    "ServerPlayNetworkHandlerMixin"
-  ],
+  "mixins": [],
   "injectors": {
     "defaultRequire": 1
-	}
+  },
+  "client": [
+    "client.ItemRendererMixin"
+  ]
 }

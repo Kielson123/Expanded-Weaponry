@@ -1,6 +1,7 @@
 package com.kielson.item;
 
 import com.kielson.item.custom.DaggerItem;
+import com.kielson.item.custom.HammerItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.Settings;
 import net.minecraft.item.ToolMaterials;
@@ -20,8 +21,24 @@ public class ModItems {
     public static final Item DIAMOND_DAGGER = register("diamond_dagger", new DaggerItem(ToolMaterials.DIAMOND, new Settings()));
     public static final Item NETHERITE_DAGGER = register("netherite_dagger", new DaggerItem(ToolMaterials.NETHERITE, new Settings().fireproof()));
 
+    public static final Item WOODEN_HAMMER = register("wooden_hammer", new HammerItem(ToolMaterials.WOOD, new Settings()));
+    public static final Item STONE_HAMMER = register("stone_hammer", new HammerItem(ToolMaterials.STONE, new Settings()));
+    public static final Item IRON_HAMMER = register("iron_hammer", new HammerItem(ToolMaterials.IRON, new Settings()));
+    public static final Item GOLDEN_HAMMER = register("golden_hammer", new HammerItem(ToolMaterials.GOLD, new Settings()));
+    public static final Item DIAMOND_HAMMER = register("diamond_hammer", new HammerItem(ToolMaterials.DIAMOND, new Settings()));
+    public static final Item NETHERITE_HAMMER = register("netherite_hammer", new HammerItem(ToolMaterials.NETHERITE, new Settings().fireproof()));
+
     public static final Item LONGBOW = register("longbow", new CustomBow(8.5, 1.8, 3.75, new Settings().maxDamage(328)));
 
+
+    //Model generation
+    public static final Item[] ITEMS_HANDHELD = new Item[]{
+            WOODEN_DAGGER, STONE_DAGGER, IRON_DAGGER, GOLDEN_DAGGER, DIAMOND_DAGGER, NETHERITE_DAGGER,
+            WOODEN_HAMMER, STONE_HAMMER, IRON_HAMMER, GOLDEN_HAMMER, DIAMOND_HAMMER, NETHERITE_HAMMER
+    };
+    public static final Item[] ITEMS_DEFAULT = new Item[]{
+
+    };
 
     public static Item register(String id, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(MOD_ID, id), item);
