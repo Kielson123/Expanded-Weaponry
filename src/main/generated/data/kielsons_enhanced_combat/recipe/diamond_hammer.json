@@ -2,19 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "b": {
-      "item": "minecraft:netherite_ingot"
+    "h": {
+      "item": "minecraft:diamond"
     },
     "s": {
       "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "b",
-    "s"
+    "hhh",
+    "hhh",
+    " s "
   ],
   "result": {
     "count": 1,
-    "id": "kielsons_enhanced_combat:netherite_dagger"
+    "id": "kielsons_enhanced_combat:diamond_hammer"
   }
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "h": {
+      "item": "minecraft:gold_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "hhh",
+    "hhh",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "kielsons_enhanced_combat:golden_hammer"
+  }
+}
