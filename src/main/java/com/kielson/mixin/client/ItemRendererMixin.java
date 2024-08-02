@@ -20,7 +20,9 @@ abstract class ItemRendererMixin {
 
     @ModifyVariable(method = "renderItem(Lnet/minecraft/item/ItemStack;Lnet/minecraft/client/render/model/json/ModelTransformationMode;ZLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;IILnet/minecraft/client/render/model/BakedModel;)V", at = @At("HEAD"), argsOnly = true)
     private BakedModel useHammerModel(BakedModel value, ItemStack stack, ModelTransformationMode renderMode){
-        if (renderMode != ModelTransformationMode.GUI){
+        if (renderMode == ModelTransformationMode.FIRST_PERSON_LEFT_HAND || renderMode == ModelTransformationMode.FIRST_PERSON_RIGHT_HAND
+                || renderMode == ModelTransformationMode.THIRD_PERSON_LEFT_HAND || renderMode == ModelTransformationMode.THIRD_PERSON_RIGHT_HAND){
+
             if (stack.isOf(ModItems.WOODEN_HAMMER)) return this.models.getModelManager().getModel(InHandItemModels.WOODEN_HAMMER_IN_HAND);
             if (stack.isOf(ModItems.STONE_HAMMER)) return this.models.getModelManager().getModel(InHandItemModels.STONE_HAMMER_IN_HAND);
             if (stack.isOf(ModItems.IRON_HAMMER)) return this.models.getModelManager().getModel(InHandItemModels.IRON_HAMMER_IN_HAND);
