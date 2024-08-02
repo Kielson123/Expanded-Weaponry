@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#kielsons_enhanced_combat:custom_bows"
+    "#kielsons_enhanced_combat:custom_bows",
+    "#kielsons_enhanced_combat:hammers"
   ]
 }
