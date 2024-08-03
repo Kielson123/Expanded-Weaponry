@@ -73,35 +73,35 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     private void generateHammers(RecipeExporter exporter){
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.WOODEN_HAMMER).pattern("hhh").pattern("hhh").pattern(" s ")
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.WOODEN_HAMMER).pattern("hhh").pattern("hsh").pattern(" s ")
                 .input('h', ItemTags.PLANKS)
                 .input('s', Items.STICK)
                 .criterion("planks", conditionsFromTag(ItemTags.PLANKS))
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, Identifier.of(MOD_ID, getRecipeName(ModItems.WOODEN_HAMMER)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.STONE_HAMMER).pattern("hhh").pattern("hhh").pattern(" s ")
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.STONE_HAMMER).pattern("hhh").pattern("hsh").pattern(" s ")
                 .input('h', ItemTags.STONE_TOOL_MATERIALS)
                 .input('s', Items.STICK)
                 .criterion("stone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, Identifier.of(MOD_ID, getRecipeName(ModItems.STONE_HAMMER)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IRON_HAMMER).pattern("hhh").pattern("hhh").pattern(" s ")
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IRON_HAMMER).pattern("hhh").pattern("hsh").pattern(" s ")
                 .input('h', Items.IRON_INGOT)
                 .input('s', Items.STICK)
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, Identifier.of(MOD_ID, getRecipeName(ModItems.IRON_HAMMER)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GOLDEN_HAMMER).pattern("hhh").pattern("hhh").pattern(" s ")
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GOLDEN_HAMMER).pattern("hhh").pattern("hsh").pattern(" s ")
                 .input('h', Items.GOLD_INGOT)
                 .input('s', Items.STICK)
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, Identifier.of(MOD_ID, getRecipeName(ModItems.GOLDEN_HAMMER)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DIAMOND_HAMMER).pattern("hhh").pattern("hhh").pattern(" s ")
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DIAMOND_HAMMER).pattern("hhh").pattern("hsh").pattern(" s ")
                 .input('h', Items.DIAMOND)
                 .input('s', Items.STICK)
                 .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
