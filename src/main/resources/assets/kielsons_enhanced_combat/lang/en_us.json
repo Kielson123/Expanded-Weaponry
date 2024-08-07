@@ -15,5 +15,12 @@
   "item.kielsons_enhanced_combat.diamond_hammer": "Diamond Hammer",
   "item.kielsons_enhanced_combat.netherite_hammer": "Netherite Hammer",
 
+  "item.kielsons_enhanced_combat.wooden_spear": "Wooden Spear",
+  "item.kielsons_enhanced_combat.stone_spear": "Stone Spear",
+  "item.kielsons_enhanced_combat.iron_spear": "Iron Spear",
+  "item.kielsons_enhanced_combat.golden_spear": "Golden Spear",
+  "item.kielsons_enhanced_combat.diamond_spear": "Diamond Spear",
+  "item.kielsons_enhanced_combat.netherite_spear": "Netherite Spear",
+
   "item.kielsons_enhanced_combat.longbow": "Longbow"
 }
