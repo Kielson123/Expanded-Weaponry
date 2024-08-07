@@ -2,6 +2,7 @@ package com.kielson.item;
 
 import com.kielson.item.custom.DaggerItem;
 import com.kielson.item.custom.HammerItem;
+import com.kielson.item.custom.SpearItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.Settings;
 import net.minecraft.item.ToolMaterials;
@@ -28,12 +29,12 @@ public class ModItems {
     public static final Item DIAMOND_HAMMER = register("diamond_hammer", new HammerItem(ToolMaterials.DIAMOND, new Settings()));
     public static final Item NETHERITE_HAMMER = register("netherite_hammer", new HammerItem(ToolMaterials.NETHERITE, new Settings().fireproof()));
 
-    public static final Item WOODEN_SPEAR = register("wooden_spear", new HammerItem(ToolMaterials.WOOD, new Settings()));
-    public static final Item STONE_SPEAR = register("stone_spear", new HammerItem(ToolMaterials.STONE, new Settings()));
-    public static final Item IRON_SPEAR = register("iron_spear", new HammerItem(ToolMaterials.IRON, new Settings()));
-    public static final Item GOLDEN_SPEAR = register("golden_spear", new HammerItem(ToolMaterials.GOLD, new Settings()));
-    public static final Item DIAMOND_SPEAR = register("diamond_spear", new HammerItem(ToolMaterials.DIAMOND, new Settings()));
-    public static final Item NETHERITE_SPEAR = register("netherite_spear", new HammerItem(ToolMaterials.NETHERITE, new Settings().fireproof()));
+    public static final Item WOODEN_SPEAR = register("wooden_spear", new SpearItem(ToolMaterials.WOOD, new Settings()));
+    public static final Item STONE_SPEAR = register("stone_spear", new SpearItem(ToolMaterials.STONE, new Settings()));
+    public static final Item IRON_SPEAR = register("iron_spear", new SpearItem(ToolMaterials.IRON, new Settings()));
+    public static final Item GOLDEN_SPEAR = register("golden_spear", new SpearItem(ToolMaterials.GOLD, new Settings()));
+    public static final Item DIAMOND_SPEAR = register("diamond_spear", new SpearItem(ToolMaterials.DIAMOND, new Settings()));
+    public static final Item NETHERITE_SPEAR = register("netherite_spear", new SpearItem(ToolMaterials.NETHERITE, new Settings().fireproof()));
 
     public static final Item LONGBOW = register("longbow", new CustomBow(8.5, 1.8, 3.75, new Settings().maxDamage(328)));
 
