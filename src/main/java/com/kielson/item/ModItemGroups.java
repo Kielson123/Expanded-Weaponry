@@ -31,6 +31,13 @@ public class ModItemGroups {
             entries.add(ModItems.DIAMOND_HAMMER);
             entries.add(ModItems.NETHERITE_HAMMER);
 
+            entries.add(ModItems.WOODEN_SPEAR);
+            entries.add(ModItems.STONE_SPEAR);
+            entries.add(ModItems.IRON_SPEAR);
+            entries.add(ModItems.GOLDEN_SPEAR);
+            entries.add(ModItems.DIAMOND_SPEAR);
+            entries.add(ModItems.NETHERITE_SPEAR);
+
             entries.add(ModItems.LONGBOW);
 
         }).build());
@@ -52,6 +59,13 @@ public class ModItemGroups {
             content.addAfter(ModItems.NETHERITE_DAGGER, ModItems.IRON_HAMMER);
             content.addAfter(ModItems.NETHERITE_DAGGER, ModItems.STONE_HAMMER);
             content.addAfter(ModItems.NETHERITE_DAGGER, ModItems.WOODEN_HAMMER);
+
+            content.addAfter(ModItems.NETHERITE_HAMMER, ModItems.NETHERITE_SPEAR);
+            content.addAfter(ModItems.NETHERITE_HAMMER, ModItems.DIAMOND_SPEAR);
+            content.addAfter(ModItems.NETHERITE_HAMMER, ModItems.GOLDEN_SPEAR);
+            content.addAfter(ModItems.NETHERITE_HAMMER, ModItems.IRON_SPEAR);
+            content.addAfter(ModItems.NETHERITE_HAMMER, ModItems.STONE_SPEAR);
+            content.addAfter(ModItems.NETHERITE_HAMMER, ModItems.WOODEN_SPEAR);
 
             content.addAfter(Items.BOW, ModItems.LONGBOW);
         });

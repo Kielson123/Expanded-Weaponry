@@ -27,6 +27,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter exporter) {
         generateDaggers(exporter);
         generateHammers(exporter);
+        generateSpears(exporter);
     }
 
     private void generateDaggers(RecipeExporter exporter){
@@ -113,5 +114,49 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
                 .criterion(hasItem(ModItems.DIAMOND_HAMMER), conditionsFromItem(ModItems.DIAMOND_HAMMER))
                 .offerTo(exporter, Identifier.of(MOD_ID, getRecipeName(ModItems.NETHERITE_HAMMER) + "_smithing"));
+    }
+
+    private void generateSpears(RecipeExporter exporter){
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.WOODEN_SPEAR).pattern("b  ").pattern(" s ").pattern("  s")
+                .input('b', ItemTags.PLANKS)
+                .input('s', Items.STICK)
+                .criterion("planks", conditionsFromTag(ItemTags.PLANKS))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, Identifier.of(MOD_ID, getRecipeName(ModItems.WOODEN_SPEAR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.STONE_SPEAR).pattern("b  ").pattern(" s ").pattern("  s")
+                .input('b', ItemTags.STONE_TOOL_MATERIALS)
+                .input('s', Items.STICK)
+                .criterion("stone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, Identifier.of(MOD_ID, getRecipeName(ModItems.STONE_SPEAR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IRON_SPEAR).pattern("b  ").pattern(" s ").pattern("  s")
+                .input('b', Items.IRON_INGOT)
+                .input('s', Items.STICK)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, Identifier.of(MOD_ID, getRecipeName(ModItems.IRON_SPEAR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.GOLDEN_SPEAR).pattern("b  ").pattern(" s ").pattern("  s")
+                .input('b', Items.GOLD_INGOT)
+                .input('s', Items.STICK)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, Identifier.of(MOD_ID, getRecipeName(ModItems.GOLDEN_SPEAR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DIAMOND_SPEAR).pattern("b  ").pattern(" s ").pattern("  s")
+
+                .input('b', Items.DIAMOND)
+                .input('s', Items.STICK)
+                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, Identifier.of(MOD_ID, getRecipeName(ModItems.DIAMOND_SPEAR)));
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE), Ingredient.ofItems(ModItems.DIAMOND_SPEAR),
+                        Ingredient.ofItems(Items.NETHERITE_INGOT), RecipeCategory.COMBAT, ModItems.NETHERITE_SPEAR)
+                .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
+                .criterion(hasItem(ModItems.DIAMOND_SPEAR), conditionsFromItem(ModItems.DIAMOND_SPEAR))
+                .offerTo(exporter, Identifier.of(MOD_ID, getRecipeName(ModItems.NETHERITE_SPEAR) + "_smithing"));
     }
 }

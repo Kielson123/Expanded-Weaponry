@@ -1,0 +1,6 @@
+{
+  "parent": "kielsons_enhanced_combat:item/spear",
+  "textures": {
+    "layer0": "kielsons_enhanced_combat:item/iron_spear"
+  }
+}

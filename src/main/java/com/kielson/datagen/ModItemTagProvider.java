@@ -20,8 +20,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     public static final TagKey<Item> DAGGERS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "daggers"));
     public static final TagKey<Item> HAMMERS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "hammers"));
+    public static final TagKey<Item> SPEARS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "spears"));
     public static final TagKey<Item> CUSTOM_BOWS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "custom_bows"));
-    public static final TagKey<Item> SWEEPING_DISABLED = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "sweeping_disabled"));
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
@@ -40,6 +40,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.GOLDEN_HAMMER)
                 .add(ModItems.DIAMOND_HAMMER)
                 .add(ModItems.NETHERITE_HAMMER);
+
+        getOrCreateTagBuilder(SPEARS)
+                .add(ModItems.WOODEN_SPEAR)
+                .add(ModItems.STONE_SPEAR)
+                .add(ModItems.IRON_SPEAR)
+                .add(ModItems.GOLDEN_SPEAR)
+                .add(ModItems.DIAMOND_SPEAR)
+                .add(ModItems.NETHERITE_SPEAR);
 
         getOrCreateTagBuilder(CUSTOM_BOWS)
                 .add(ModItems.LONGBOW);

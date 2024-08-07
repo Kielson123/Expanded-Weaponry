@@ -28,13 +28,21 @@ public class ModItems {
     public static final Item DIAMOND_HAMMER = register("diamond_hammer", new HammerItem(ToolMaterials.DIAMOND, new Settings()));
     public static final Item NETHERITE_HAMMER = register("netherite_hammer", new HammerItem(ToolMaterials.NETHERITE, new Settings().fireproof()));
 
+    public static final Item WOODEN_SPEAR = register("wooden_spear", new HammerItem(ToolMaterials.WOOD, new Settings()));
+    public static final Item STONE_SPEAR = register("stone_spear", new HammerItem(ToolMaterials.STONE, new Settings()));
+    public static final Item IRON_SPEAR = register("iron_spear", new HammerItem(ToolMaterials.IRON, new Settings()));
+    public static final Item GOLDEN_SPEAR = register("golden_spear", new HammerItem(ToolMaterials.GOLD, new Settings()));
+    public static final Item DIAMOND_SPEAR = register("diamond_spear", new HammerItem(ToolMaterials.DIAMOND, new Settings()));
+    public static final Item NETHERITE_SPEAR = register("netherite_spear", new HammerItem(ToolMaterials.NETHERITE, new Settings().fireproof()));
+
     public static final Item LONGBOW = register("longbow", new CustomBow(8.5, 1.8, 3.75, new Settings().maxDamage(328)));
 
 
     //Model generation
     public static final Item[] ITEMS_HANDHELD = new Item[]{
             WOODEN_DAGGER, STONE_DAGGER, IRON_DAGGER, GOLDEN_DAGGER, DIAMOND_DAGGER, NETHERITE_DAGGER,
-            WOODEN_HAMMER, STONE_HAMMER, IRON_HAMMER, GOLDEN_HAMMER, DIAMOND_HAMMER, NETHERITE_HAMMER
+            WOODEN_HAMMER, STONE_HAMMER, IRON_HAMMER, GOLDEN_HAMMER, DIAMOND_HAMMER, NETHERITE_HAMMER,
+            WOODEN_SPEAR, STONE_SPEAR, IRON_SPEAR, GOLDEN_SPEAR, DIAMOND_SPEAR, NETHERITE_SPEAR
     };
     public static final Item[] ITEMS_DEFAULT = new Item[]{
 
