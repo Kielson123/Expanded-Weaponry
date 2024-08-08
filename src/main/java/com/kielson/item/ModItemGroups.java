@@ -39,11 +39,14 @@ public class ModItemGroups {
             entries.add(ModItems.NETHERITE_SPEAR);
 
             entries.add(ModItems.LONGBOW);
+            entries.add(ModItems.SLINGSHOT);
 
         }).build());
-    public static void registerItemGroups() {
+
+    public static void initialize() {
         addItemsToCombat();
     }
+
     private static void addItemsToCombat(){
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {
             content.addAfter(Items.NETHERITE_AXE, ModItems.NETHERITE_DAGGER);
@@ -68,6 +71,7 @@ public class ModItemGroups {
             content.addAfter(ModItems.NETHERITE_HAMMER, ModItems.WOODEN_SPEAR);
 
             content.addAfter(Items.BOW, ModItems.LONGBOW);
+            content.addAfter(Items.CROSSBOW, ModItems.SLINGSHOT);
         });
     }
 }

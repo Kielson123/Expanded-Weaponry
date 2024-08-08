@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "h": {
+      "item": "minecraft:stick"
+    },
+    "s": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "hsh",
+    " h "
+  ],
+  "result": {
+    "count": 1,
+    "id": "kielsons_enhanced_combat:slingshot"
+  }
+}

@@ -4,6 +4,7 @@ import com.kielson.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.TagKey;
@@ -18,6 +19,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         super(output, completableFuture);
     }
 
+    public static final TagKey<Item> SLINGSHOT_PROJECTILES = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "slingshot_projectiles"));
     public static final TagKey<Item> DAGGERS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "daggers"));
     public static final TagKey<Item> HAMMERS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "hammers"));
     public static final TagKey<Item> SPEARS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "spears"));
@@ -51,5 +53,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(CUSTOM_BOWS)
                 .add(ModItems.LONGBOW);
+
+        getOrCreateTagBuilder(SLINGSHOT_PROJECTILES)
+                .add(Items.IRON_NUGGET)
+                .add(Items.GOLD_NUGGET)
+                .add(Items.FLINT);
     }
 }

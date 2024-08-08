@@ -28,6 +28,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         generateDaggers(exporter);
         generateHammers(exporter);
         generateSpears(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.SLINGSHOT).pattern("hsh").pattern(" h ")
+                .input('h', Items.STICK)
+                .input('s', Items.STRING)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(Items.STRING), conditionsFromItem(Items.STRING))
+                .offerTo(exporter, Identifier.of(MOD_ID, getRecipeName(ModItems.SLINGSHOT)));
     }
 
     private void generateDaggers(RecipeExporter exporter){

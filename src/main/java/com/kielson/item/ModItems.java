@@ -2,6 +2,7 @@ package com.kielson.item;
 
 import com.kielson.item.custom.DaggerItem;
 import com.kielson.item.custom.HammerItem;
+import com.kielson.item.custom.SlingshotItem;
 import com.kielson.item.custom.SpearItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.Settings;
@@ -37,6 +38,7 @@ public class ModItems {
     public static final Item NETHERITE_SPEAR = register("netherite_spear", new SpearItem(ToolMaterials.NETHERITE, new Settings().fireproof()));
 
     public static final Item LONGBOW = register("longbow", new CustomBow(8.5, 1.8, 3.75, new Settings().maxDamage(328)));
+    public static final Item SLINGSHOT = register("slingshot", new SlingshotItem(new Settings()));
 
 
     //Model generation
@@ -53,5 +55,5 @@ public class ModItems {
         return Registry.register(Registries.ITEM, Identifier.of(MOD_ID, id), item);
     }
 
-    public static void registerModItems() {int x = 1;}
+    public static void initialize() {}
 }
