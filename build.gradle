@@ -34,7 +34,7 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
-	modApi("maven.modrinth:_kielsons-api:${project.kielsonsapi_version}")
+	include(modApi("maven.modrinth:_kielsons-api:${project.kielsonsapi_version}"))
 }
 
 processResources {
@@ -83,6 +83,5 @@ modrinth {
 	loaders = ["fabric"]
 	dependencies {
 		required.project "fabric-api"
-		required.project "_kielsons-api"
 	}
 }
