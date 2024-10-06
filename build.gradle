@@ -83,5 +83,6 @@ modrinth {
 	loaders = ["fabric"]
 	dependencies {
 		required.project "fabric-api"
+		embedded.project "_kielsons-api"
 	}
 }
