@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "kielsons_enhanced_combat:item/diamond_dagger"
+  }
+}

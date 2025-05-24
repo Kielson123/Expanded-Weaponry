@@ -1,19 +1,18 @@
 package com.kielson.item.custom;
 
-import com.kielson.client.TooltipHelper;
-import com.kielson.util.ItemHelper;
+import net.minecraft.block.BlockState;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.AttributeModifierSlot;
 import net.minecraft.component.type.AttributeModifiersComponent;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.item.tooltip.TooltipData;
 import net.minecraft.util.Identifier;
-
-import java.util.Optional;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 import static com.kielson.KielsonsEnhancedCombat.MOD_ID;
 
@@ -37,7 +36,7 @@ public class DaggerItem extends Item {
     }
 
     @Override
-    public Optional<TooltipData> getTooltipData(ItemStack stack) {
-        TooltipHelper.updateTooltipText();
+    public boolean canMine(ItemStack stack, BlockState state, World world, BlockPos pos, LivingEntity user) {
+        return !user.isInCreativeMode();
     }
 }

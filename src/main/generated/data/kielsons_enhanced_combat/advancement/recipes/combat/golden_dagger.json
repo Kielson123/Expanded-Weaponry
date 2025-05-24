@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "kielsonsapi:golden_dagger"
+        "recipe": "kielsons_enhanced_combat:golden_dagger"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "kielsonsapi:golden_dagger"
+      "kielsons_enhanced_combat:golden_dagger"
     ]
   }
 }

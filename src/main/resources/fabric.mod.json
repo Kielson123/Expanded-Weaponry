@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "kielsons_enhanced_combat",
-	"version": "0.3",
+	"version": "0.4",
 	"name": "Kielsons Enhanced Combat",
 	"description": "A minecraft mod that aims to improve combat.",
 	"authors": [
@@ -28,10 +28,10 @@
 		"kielsons_enhanced_combat.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.11",
-		"minecraft": "~1.21",
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
 		"java": ">=21",
-		"fabric-api": ">=0.100.7"
+		"fabric-api": ">=0.124.2"
 	},
 	"accessWidener" : "kielsons_enhanced_combat.accesswidener"
 }

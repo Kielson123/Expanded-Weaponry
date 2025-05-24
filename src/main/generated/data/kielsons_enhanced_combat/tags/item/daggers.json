@@ -1,10 +1,10 @@
 {
   "values": [
-    "kielsonsapi:wooden_dagger",
-    "kielsonsapi:stone_dagger",
-    "kielsonsapi:iron_dagger",
-    "kielsonsapi:golden_dagger",
-    "kielsonsapi:diamond_dagger",
-    "kielsonsapi:netherite_dagger"
+    "kielsons_enhanced_combat:wooden_dagger",
+    "kielsons_enhanced_combat:stone_dagger",
+    "kielsons_enhanced_combat:iron_dagger",
+    "kielsons_enhanced_combat:golden_dagger",
+    "kielsons_enhanced_combat:diamond_dagger",
+    "kielsons_enhanced_combat:netherite_dagger"
   ]
 }

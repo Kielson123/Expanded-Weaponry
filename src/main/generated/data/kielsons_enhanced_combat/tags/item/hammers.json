@@ -1,10 +1,10 @@
 {
   "values": [
-    "kielsonsapi:wooden_hammer",
-    "kielsonsapi:stone_hammer",
-    "kielsonsapi:iron_hammer",
-    "kielsonsapi:golden_hammer",
-    "kielsonsapi:diamond_hammer",
-    "kielsonsapi:netherite_hammer"
+    "kielsons_enhanced_combat:wooden_hammer",
+    "kielsons_enhanced_combat:stone_hammer",
+    "kielsons_enhanced_combat:iron_hammer",
+    "kielsons_enhanced_combat:golden_hammer",
+    "kielsons_enhanced_combat:diamond_hammer",
+    "kielsons_enhanced_combat:netherite_hammer"
   ]
 }
