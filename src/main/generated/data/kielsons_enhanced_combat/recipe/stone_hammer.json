@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "h": {
-      "tag": "minecraft:stone_tool_materials"
-    },
-    "s": {
-      "item": "minecraft:stick"
-    }
+    "h": "#minecraft:stone_tool_materials",
+    "s": "minecraft:stick"
   },
   "pattern": [
     "hhh",
@@ -16,6 +12,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "kielsons_enhanced_combat:stone_hammer"
+    "id": "kielsonsapi:stone_hammer"
   }
 }

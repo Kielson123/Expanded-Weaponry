@@ -14,8 +14,8 @@ import java.util.concurrent.CompletableFuture;
 
 import static com.kielson.KielsonsEnhancedCombat.MOD_ID;
 
-public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
-    public ModItemTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> completableFuture) {
+public class KielsonsECTagProvider extends FabricTagProvider.ItemTagProvider {
+    public KielsonsECTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> completableFuture) {
         super(output, completableFuture);
     }
 

@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "h": {
-      "tag": "minecraft:planks"
-    },
-    "s": {
-      "item": "minecraft:stick"
-    }
+    "h": "#minecraft:planks",
+    "s": "minecraft:stick"
   },
   "pattern": [
     "hhh",
@@ -16,6 +12,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "kielsons_enhanced_combat:wooden_hammer"
+    "id": "kielsonsapi:wooden_hammer"
   }
 }

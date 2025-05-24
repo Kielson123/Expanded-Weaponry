@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "kielsons_enhanced_combat:diamond_hammer"
+        "recipe": "kielsonsapi:diamond_hammer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "kielsons_enhanced_combat:diamond_hammer"
+      "kielsonsapi:diamond_hammer"
     ]
   }
 }

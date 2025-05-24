@@ -1,16 +1,9 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "minecraft:netherite_ingot"
-  },
-  "base": {
-    "item": "kielsons_enhanced_combat:diamond_dagger"
-  },
+  "addition": "#minecraft:netherite_tool_materials",
+  "base": "kielsonsapi:diamond_dagger",
   "result": {
-    "count": 1,
-    "id": "kielsons_enhanced_combat:netherite_dagger"
+    "id": "kielsonsapi:netherite_dagger"
   },
-  "template": {
-    "item": "minecraft:netherite_upgrade_smithing_template"
-  }
+  "template": "minecraft:netherite_upgrade_smithing_template"
 }

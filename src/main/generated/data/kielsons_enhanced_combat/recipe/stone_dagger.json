@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "b": {
-      "tag": "minecraft:stone_tool_materials"
-    },
-    "s": {
-      "item": "minecraft:stick"
-    }
+    "b": "#minecraft:stone_tool_materials",
+    "s": "minecraft:stick"
   },
   "pattern": [
     "b",
@@ -15,6 +11,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "kielsons_enhanced_combat:stone_dagger"
+    "id": "kielsonsapi:stone_dagger"
   }
 }

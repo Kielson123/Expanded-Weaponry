@@ -1,6 +1,6 @@
 package com.kielson.datagen;
 
-import com.kielson.item.ModItems;
+/*import com.kielson.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
@@ -26,3 +26,4 @@ public class ModModelProvider extends FabricModelProvider {
         }
     }
 }
+*/

@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "b": {
-      "item": "minecraft:gold_ingot"
-    },
-    "s": {
-      "item": "minecraft:stick"
-    }
+    "b": "minecraft:gold_ingot",
+    "s": "minecraft:stick"
   },
   "pattern": [
     "b  ",
@@ -16,6 +12,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "kielsons_enhanced_combat:golden_spear"
+    "id": "kielsonsapi:golden_spear"
   }
 }

@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "b": {
-      "tag": "minecraft:planks"
-    },
-    "s": {
-      "item": "minecraft:stick"
-    }
+    "b": "#minecraft:planks",
+    "s": "minecraft:stick"
   },
   "pattern": [
     "b  ",
@@ -16,6 +12,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "kielsons_enhanced_combat:wooden_spear"
+    "id": "kielsonsapi:wooden_spear"
   }
 }

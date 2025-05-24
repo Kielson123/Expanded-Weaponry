@@ -7,8 +7,8 @@ public class KielsonsEnhancedCombatDataGenerator implements DataGeneratorEntrypo
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
-        pack.addProvider(ModModelProvider::new);
-        pack.addProvider(ModItemTagProvider::new);
-        pack.addProvider(ModRecipeProvider::new);
+        //pack.addProvider(ModModelProvider::new);
+        pack.addProvider(KielsonsECTagProvider::new);
+        pack.addProvider(KielsonsECRecipeProvider::new);
     }
 }

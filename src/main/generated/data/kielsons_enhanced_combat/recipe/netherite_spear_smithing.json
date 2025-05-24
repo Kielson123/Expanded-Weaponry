@@ -1,16 +1,9 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "minecraft:netherite_ingot"
-  },
-  "base": {
-    "item": "kielsons_enhanced_combat:diamond_spear"
-  },
+  "addition": "#minecraft:netherite_tool_materials",
+  "base": "kielsonsapi:diamond_spear",
   "result": {
-    "count": 1,
-    "id": "kielsons_enhanced_combat:netherite_spear"
+    "id": "kielsonsapi:netherite_spear"
   },
-  "template": {
-    "item": "minecraft:netherite_upgrade_smithing_template"
-  }
+  "template": "minecraft:netherite_upgrade_smithing_template"
 }

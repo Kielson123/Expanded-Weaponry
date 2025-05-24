@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "b": {
-      "item": "minecraft:iron_ingot"
-    },
-    "s": {
-      "item": "minecraft:stick"
-    }
+    "b": "minecraft:iron_ingot",
+    "s": "minecraft:stick"
   },
   "pattern": [
     "b",
@@ -15,6 +11,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "kielsons_enhanced_combat:iron_dagger"
+    "id": "kielsonsapi:iron_dagger"
   }
 }

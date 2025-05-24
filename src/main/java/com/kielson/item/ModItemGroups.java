@@ -39,7 +39,7 @@ public class ModItemGroups {
             entries.add(ModItems.NETHERITE_SPEAR);
 
             entries.add(ModItems.LONGBOW);
-            //entries.add(ModItems.SLINGSHOT);
+            entries.add(ModItems.SLINGSHOT);
 
         }).build());
 
@@ -71,7 +71,7 @@ public class ModItemGroups {
             content.addAfter(ModItems.NETHERITE_HAMMER, ModItems.WOODEN_SPEAR);
 
             content.addAfter(Items.BOW, ModItems.LONGBOW);
-            //content.addAfter(Items.CROSSBOW, ModItems.SLINGSHOT);
+            content.addAfter(Items.CROSSBOW, ModItems.SLINGSHOT);
         });
     }
 }

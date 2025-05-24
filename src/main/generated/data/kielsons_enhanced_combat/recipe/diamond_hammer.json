@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "h": {
-      "item": "minecraft:diamond"
-    },
-    "s": {
-      "item": "minecraft:stick"
-    }
+    "h": "minecraft:diamond",
+    "s": "minecraft:stick"
   },
   "pattern": [
     "hhh",
@@ -16,6 +12,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "kielsons_enhanced_combat:diamond_hammer"
+    "id": "kielsonsapi:diamond_hammer"
   }
 }
