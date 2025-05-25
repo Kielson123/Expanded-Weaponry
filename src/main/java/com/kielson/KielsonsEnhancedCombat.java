@@ -14,5 +14,7 @@ public class KielsonsEnhancedCombat implements ModInitializer {
 	public void onInitialize(){
 		ModItems.initialize();
 		ModItemGroups.initialize();
+
+
 	}
 }
