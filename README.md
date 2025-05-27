@@ -1,2 +1,2 @@
-# _Kielson-s-Enhanced-Combat
- A mod that aims to improve minecraft combat.
+# Expanded Weaponry
+A mod that aims to expand on Minecraft combat through new equipment.

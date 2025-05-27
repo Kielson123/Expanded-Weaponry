@@ -1,0 +1,6 @@
+{
+  "parent": "expanded_weaponry:item/spear",
+  "textures": {
+    "layer0": "expanded_weaponry:item/netherite_spear"
+  }
+}

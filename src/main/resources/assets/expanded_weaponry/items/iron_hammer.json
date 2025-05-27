@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "expanded_weaponry:item/iron_hammer"
+  },
+  "model": {
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "expanded_weaponry:item/iron_hammer"
+        },
+        "when": [
+          "gui",
+          "ground",
+          "fixed"
+        ]
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "expanded_weaponry:item/iron_hammer_in_hand"
+    },
+    "property": "minecraft:display_context"
+  }
+}

@@ -32,26 +32,26 @@ public abstract class ArrowEntityMixin extends PersistentProjectileEntity {
         super(type, owner, world, stack, shotFrom);
     }
     @Inject(method = "<init>(Lnet/minecraft/world/World;DDDLnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;)V", at = @At("RETURN"))
-    protected void Kielson$init(World world, double x, double y, double z, ItemStack stack, ItemStack shotFrom, CallbackInfo ci){
+    protected void ExpandedWeaponry$init(World world, double x, double y, double z, ItemStack stack, ItemStack shotFrom, CallbackInfo ci){
         this.stack = stack;
         this.shotFrom = shotFrom;
         this.world = world;
     }
 
     @Inject(method = "<init>(Lnet/minecraft/world/World;Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;)V", at = @At("RETURN"))
-    protected void Kielson$init(World world, LivingEntity owner, ItemStack stack, ItemStack shotFrom, CallbackInfo ci){
+    protected void ExpandedWeaponry$init(World world, LivingEntity owner, ItemStack stack, ItemStack shotFrom, CallbackInfo ci){
         this.stack = stack;
         this.shotFrom = shotFrom;
         this.world = world;
     }
 
     @Inject(method = "<init>(Lnet/minecraft/entity/EntityType;Lnet/minecraft/world/World;)V", at = @At("RETURN"))
-    protected void Kielson$init(EntityType entityType, World world, CallbackInfo ci){
+    protected void ExpandedWeaponry$init(EntityType entityType, World world, CallbackInfo ci){
         this.world = world;
     }
 
     @Inject(method = "onHit", at = @At("HEAD"))
-    protected void Kielson$onHit(LivingEntity target, CallbackInfo ci){
+    protected void ExpandedWeaponry$onHit(LivingEntity target, CallbackInfo ci){
         if(stack == null || shotFrom == null){
             return;
         }
@@ -68,7 +68,7 @@ public abstract class ArrowEntityMixin extends PersistentProjectileEntity {
     }
 
     @Inject(method = "tick", at = @At("HEAD"))
-    protected void Kielson$onGroundHit(CallbackInfo ci){
+    protected void ExpandedWeaponry$onGroundHit(CallbackInfo ci){
         if(stack == null || shotFrom == null){
             return;
         }

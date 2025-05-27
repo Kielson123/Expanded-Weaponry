@@ -1,0 +1,6 @@
+{
+    "parent": "expanded_weaponry:item/slingshot",
+    "textures": {
+        "layer0": "expanded_weaponry:item/slingshot_pulling_0"
+    }
+}

@@ -11,11 +11,11 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-import static com.kielson.KielsonsEnhancedCombat.MOD_ID;
+import static com.kielson.ExpandedWeaponry.MOD_ID;
 
 public class ModItemGroups {
 
-    public static final ItemGroup KIELSONS_ENHANCED_COMBAT = Registry.register(Registries.ITEM_GROUP, Identifier.of(MOD_ID, MOD_ID),
+    public static final ItemGroup ExpandedWeaponry = Registry.register(Registries.ITEM_GROUP, Identifier.of(MOD_ID, MOD_ID),
         FabricItemGroup.builder().displayName(Text.translatable("itemGroup." + MOD_ID)).icon(() -> new ItemStack(ModItems.GOLDEN_HAMMER)).entries((displayContext, entries) -> {
             entries.add(ModItems.WOODEN_DAGGER);
             entries.add(ModItems.STONE_DAGGER);

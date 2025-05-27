@@ -8,7 +8,7 @@ import com.kielson.util.ItemHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterial;
 
-import static com.kielson.KielsonsEnhancedCombat.MOD_ID;
+import static com.kielson.ExpandedWeaponry.MOD_ID;
 
 public class ModItems {
 

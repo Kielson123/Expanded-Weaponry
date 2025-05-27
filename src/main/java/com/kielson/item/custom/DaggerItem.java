@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import static com.kielson.KielsonsEnhancedCombat.MOD_ID;
+import static com.kielson.ExpandedWeaponry.MOD_ID;
 
 public class DaggerItem extends Item {
     private static final float ATTACK_DAMAGE = 1.0f;

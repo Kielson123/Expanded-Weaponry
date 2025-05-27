@@ -1,6 +1,0 @@
-{
-    "parent": "kielsons_enhanced_combat:item/longbow",
-    "textures": {
-        "layer0": "kielsons_enhanced_combat:item/longbow_pulling_2"
-    }
-}

@@ -1,6 +1,0 @@
-{
-    "parent": "kielsons_enhanced_combat:item/slingshot",
-    "textures": {
-        "layer0": "kielsons_enhanced_combat:item/slingshot_pulling_2"
-    }
-}

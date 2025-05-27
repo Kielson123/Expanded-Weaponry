@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smithing_transform",
-  "addition": "#minecraft:netherite_tool_materials",
-  "base": "kielsons_enhanced_combat:diamond_hammer",
-  "result": {
-    "id": "kielsons_enhanced_combat:netherite_hammer"
-  },
-  "template": "minecraft:netherite_upgrade_smithing_template"
-}

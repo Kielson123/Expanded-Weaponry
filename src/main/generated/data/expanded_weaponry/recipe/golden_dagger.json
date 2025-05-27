@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "b": "minecraft:gold_ingot",
+    "s": "minecraft:stick"
+  },
+  "pattern": [
+    "b",
+    "s"
+  ],
+  "result": {
+    "count": 1,
+    "id": "expanded_weaponry:golden_dagger"
+  }
+}

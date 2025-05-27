@@ -1,0 +1,26 @@
+{
+  "itemGroup.expanded_weaponry": "_Kielson's Enhanced Combat",
+  "item.expanded_weaponry.wooden_dagger": "Drewniany sztylet",
+  "item.expanded_weaponry.stone_dagger": "Kamienny sztylet",
+  "item.expanded_weaponry.iron_dagger": "Żelazny sztylet",
+  "item.expanded_weaponry.golden_dagger": "Złoty sztylet",
+  "item.expanded_weaponry.diamond_dagger": "Diamentowy sztylet",
+  "item.expanded_weaponry.netherite_dagger": "Netherytowy sztylet",
+
+  "item.expanded_weaponry.wooden_hammer": "Drewniany młot",
+  "item.expanded_weaponry.stone_hammer": "Kamienny młot",
+  "item.expanded_weaponry.iron_hammer": "Żelazny młot",
+  "item.expanded_weaponry.golden_hammer": "Złoty młot",
+  "item.expanded_weaponry.diamond_hammer": "Diamentowy młot",
+  "item.expanded_weaponry.netherite_hammer": "Netherytowy młot",
+
+  "item.expanded_weaponry.wooden_spear": "Drewniana włócznia",
+  "item.expanded_weaponry.stone_spear": "Kamienna włócznia",
+  "item.expanded_weaponry.iron_spear": "Żelazna włócznia",
+  "item.expanded_weaponry.golden_spear": "Złota włócznia",
+  "item.expanded_weaponry.diamond_spear": "Diamentowa włócznia",
+  "item.expanded_weaponry.netherite_spear": "Netherytowa włócznia",
+
+  "item.expanded_weaponry.longbow": "Długi łuk",
+  "item.expanded_weaponry.slingshot": "Proca"
+}

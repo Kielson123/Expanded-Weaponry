@@ -21,7 +21,7 @@ repositories {
 }
 
 loom {
-	accessWidenerPath = file("src/main/resources/kielsons_enhanced_combat.accesswidener")
+	accessWidenerPath = file("src/main/resources/expanded_weaponry.accesswidener")
 }
 
 fabricApi {
@@ -36,7 +36,7 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
-	include(modApi("maven.modrinth:_kielsons-api:${project.kielsonsapi_version}"))
+	include(modApi("maven.modrinth:kielsons-api:${project.kielsonsapi_version}"))
 }
 
 processResources {
@@ -85,6 +85,6 @@ modrinth {
 	loaders = ["fabric"]
 	dependencies {
 		required.project "fabric-api"
-		embedded.project "_kielsons-api"
+		embedded.project "kielsons-api"
 	}
 }

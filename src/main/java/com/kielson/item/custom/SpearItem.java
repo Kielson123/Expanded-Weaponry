@@ -15,7 +15,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 import static com.kielson.KielsonsAPIComponents.TWO_HANDED;
-import static com.kielson.KielsonsEnhancedCombat.MOD_ID;
+import static com.kielson.ExpandedWeaponry.MOD_ID;
 
 public class SpearItem extends Item {
     private static final float ATTACK_DAMAGE = 2.0f;

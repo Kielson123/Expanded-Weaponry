@@ -1,0 +1,27 @@
+{
+  "itemGroup.expanded_weaponry": "_Kielson's Enhanced Combat",
+
+  "item.expanded_weaponry.wooden_dagger": "Wooden Dagger",
+  "item.expanded_weaponry.stone_dagger": "Stone Dagger",
+  "item.expanded_weaponry.iron_dagger": "Iron Dagger",
+  "item.expanded_weaponry.golden_dagger": "Golden Dagger",
+  "item.expanded_weaponry.diamond_dagger": "Diamond Dagger",
+  "item.expanded_weaponry.netherite_dagger": "Netherite Dagger",
+
+  "item.expanded_weaponry.wooden_hammer": "Wooden Hammer",
+  "item.expanded_weaponry.stone_hammer": "Stone Hammer",
+  "item.expanded_weaponry.iron_hammer": "Iron Hammer",
+  "item.expanded_weaponry.golden_hammer": "Golden Hammer",
+  "item.expanded_weaponry.diamond_hammer": "Diamond Hammer",
+  "item.expanded_weaponry.netherite_hammer": "Netherite Hammer",
+
+  "item.expanded_weaponry.wooden_spear": "Wooden Spear",
+  "item.expanded_weaponry.stone_spear": "Stone Spear",
+  "item.expanded_weaponry.iron_spear": "Iron Spear",
+  "item.expanded_weaponry.golden_spear": "Golden Spear",
+  "item.expanded_weaponry.diamond_spear": "Diamond Spear",
+  "item.expanded_weaponry.netherite_spear": "Netherite Spear",
+
+  "item.expanded_weaponry.longbow": "Longbow",
+  "item.expanded_weaponry.slingshot": "Slingshot"
+}

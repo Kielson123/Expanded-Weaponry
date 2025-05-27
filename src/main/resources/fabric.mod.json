@@ -1,31 +1,31 @@
 {
 	"schemaVersion": 1,
-	"id": "kielsons_enhanced_combat",
-	"version": "0.4.1",
-	"name": "Kielsons Enhanced Combat",
-	"description": "A minecraft mod that aims to improve combat.",
+	"id": "expanded_weaponry",
+	"version": "0.4.2",
+	"name": "Expanded Weaponry",
+	"description": "A mod that aims to expand on Minecraft combat through new equipment.",
 	"authors": [
 		"_Kielson"
 	],
 	"contact": {
-		"sources": "https://github.com/Kielson123/_Kielson-s-Enhanced-Combat"
+		"sources": "https://github.com/Kielson123/Expanded-Weaponry"
 	},
 	"license": "GNU GPL-3.0",
-	"icon": "assets/kielsons_enhanced_combat/icon.png",
+	"icon": "assets/expanded_weaponry/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.kielson.KielsonsEnhancedCombat"
+			"com.kielson.ExpandedWeaponry"
 		],
 		"fabric-datagen": [
-			"com.kielson.datagen.KielsonsEnhancedCombatDataGenerator"
+			"com.kielson.datagen.ExpandedWeaponryDataGenerator"
 		],
 		"client": [
-			"com.kielson.client.KielsonsEnhancedCombatClient"
+			"com.kielson.client.ExpandedWeaponryClient"
 		]
 	},
 	"mixins": [
-		"kielsons_enhanced_combat.mixins.json"
+		"expanded_weaponry.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.14",
@@ -33,5 +33,5 @@
 		"java": ">=21",
 		"fabric-api": ">=0.124.2"
 	},
-	"accessWidener" : "kielsons_enhanced_combat.accesswidener"
+	"accessWidener" : "expanded_weaponry.accesswidener"
 }

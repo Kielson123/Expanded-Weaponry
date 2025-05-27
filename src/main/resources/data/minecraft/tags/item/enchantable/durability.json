@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#kielsons_enhanced_combat:custom_bows",
-    "#kielsons_enhanced_combat:hammers",
-    "#kielsons_enhanced_combat:spears"
+    "#expanded_weaponry:custom_bows",
+    "#expanded_weaponry:hammers",
+    "#expanded_weaponry:spears"
   ]
 }

@@ -1,0 +1,6 @@
+{
+    "parent": "expanded_weaponry:item/longbow",
+    "textures": {
+        "layer0": "expanded_weaponry:item/longbow_pulling_0"
+    }
+}

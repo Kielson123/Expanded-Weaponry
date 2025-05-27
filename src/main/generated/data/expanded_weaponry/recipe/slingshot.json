@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "h": "minecraft:stick",
+    "s": "minecraft:string"
+  },
+  "pattern": [
+    "hsh",
+    " h "
+  ],
+  "result": {
+    "count": 1,
+    "id": "expanded_weaponry:slingshot"
+  }
+}
