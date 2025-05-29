@@ -14,7 +14,7 @@ public class ExpandedWeaponry implements ModInitializer {
 	public void onInitialize(){
 		ModItems.initialize();
 		ModItemGroups.initialize();
-
+		ModTags.initialize();
 
 	}
 }

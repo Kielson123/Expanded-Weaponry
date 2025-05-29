@@ -1,5 +1,7 @@
 package com.kielson.mixin;
 
+import com.kielson.ModTags;
+import com.kielson.datagen.ExpandedWeaponryTagProvider;
 import com.kielson.item.ModItems;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -55,8 +57,7 @@ public abstract class ArrowEntityMixin extends PersistentProjectileEntity {
         if(stack == null || shotFrom == null){
             return;
         }
-        if((stack.isOf(Items.IRON_NUGGET) || stack.isOf(Items.GOLD_NUGGET) || stack.isOf(Items.FLINT))
-                && shotFrom.isOf(ModItems.SLINGSHOT) && arrowEntity.isInGround() && arrowEntity.inGroundTime != 0){
+        if(stack.isIn(ModTags.SLINGSHOT_PROJECTILES) && shotFrom.isOf(ModItems.SLINGSHOT) && arrowEntity.isInGround() && arrowEntity.inGroundTime != 0){
             if(owner instanceof PlayerEntity player && !player.isInCreativeMode()){
                 int chance = new Random().nextInt(0, 2);
                 if(chance == 1){
@@ -72,8 +73,7 @@ public abstract class ArrowEntityMixin extends PersistentProjectileEntity {
         if(stack == null || shotFrom == null){
             return;
         }
-        if((stack.isOf(Items.IRON_NUGGET) || stack.isOf(Items.GOLD_NUGGET) || stack.isOf(Items.FLINT))
-                && shotFrom.isOf(ModItems.SLINGSHOT) && arrowEntity.isInGround() && arrowEntity.inGroundTime != 0){
+        if(stack.isIn(ModTags.SLINGSHOT_PROJECTILES) && shotFrom.isOf(ModItems.SLINGSHOT) && arrowEntity.isInGround() && arrowEntity.inGroundTime != 0){
             if(owner instanceof PlayerEntity player && !player.isInCreativeMode()){
                 arrowEntity.dropItem((ServerWorld) world, stack.getItem());
             }

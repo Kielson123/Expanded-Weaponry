@@ -1,5 +1,6 @@
 package com.kielson.datagen;
 
+import com.kielson.ModTags;
 import com.kielson.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -19,15 +20,9 @@ public class ExpandedWeaponryTagProvider extends FabricTagProvider.ItemTagProvid
         super(output, completableFuture);
     }
 
-    public static final TagKey<Item> SLINGSHOT_PROJECTILES = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "slingshot_projectiles"));
-    public static final TagKey<Item> DAGGERS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "daggers"));
-    public static final TagKey<Item> HAMMERS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "hammers"));
-    public static final TagKey<Item> SPEARS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "spears"));
-    public static final TagKey<Item> CUSTOM_BOWS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "custom_bows"));
-
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
-        getOrCreateTagBuilder(DAGGERS)
+        getOrCreateTagBuilder(ModTags.DAGGERS)
                 .add(ModItems.WOODEN_DAGGER)
                 .add(ModItems.STONE_DAGGER)
                 .add(ModItems.IRON_DAGGER)
@@ -35,7 +30,7 @@ public class ExpandedWeaponryTagProvider extends FabricTagProvider.ItemTagProvid
                 .add(ModItems.DIAMOND_DAGGER)
                 .add(ModItems.NETHERITE_DAGGER);
 
-        getOrCreateTagBuilder(HAMMERS)
+        getOrCreateTagBuilder(ModTags.HAMMERS)
                 .add(ModItems.WOODEN_HAMMER)
                 .add(ModItems.STONE_HAMMER)
                 .add(ModItems.IRON_HAMMER)
@@ -43,7 +38,7 @@ public class ExpandedWeaponryTagProvider extends FabricTagProvider.ItemTagProvid
                 .add(ModItems.DIAMOND_HAMMER)
                 .add(ModItems.NETHERITE_HAMMER);
 
-        getOrCreateTagBuilder(SPEARS)
+        getOrCreateTagBuilder(ModTags.SPEARS)
                 .add(ModItems.WOODEN_SPEAR)
                 .add(ModItems.STONE_SPEAR)
                 .add(ModItems.IRON_SPEAR)
@@ -51,12 +46,30 @@ public class ExpandedWeaponryTagProvider extends FabricTagProvider.ItemTagProvid
                 .add(ModItems.DIAMOND_SPEAR)
                 .add(ModItems.NETHERITE_SPEAR);
 
-        getOrCreateTagBuilder(CUSTOM_BOWS)
+        getOrCreateTagBuilder(ModTags.BOWS)
                 .add(ModItems.LONGBOW);
 
-        getOrCreateTagBuilder(SLINGSHOT_PROJECTILES)
+        getOrCreateTagBuilder(ModTags.SLINGSHOT_PROJECTILES)
                 .add(Items.IRON_NUGGET)
                 .add(Items.GOLD_NUGGET)
                 .add(Items.FLINT);
+
+        getOrCreateTagBuilder(ModTags.HEAVY_ARMORS)
+                .add(ModItems.HEAVY_IRON_HELMET)
+                .add(ModItems.HEAVY_IRON_CHESTPLATE)
+                .add(ModItems.HEAVY_IRON_LEGGINGS)
+                .add(ModItems.HEAVY_IRON_BOOTS)
+                .add(ModItems.HEAVY_GOLDEN_HELMET)
+                .add(ModItems.HEAVY_GOLDEN_CHESTPLATE)
+                .add(ModItems.HEAVY_GOLDEN_LEGGINGS)
+                .add(ModItems.HEAVY_GOLDEN_BOOTS)
+                .add(ModItems.HEAVY_DIAMOND_HELMET)
+                .add(ModItems.HEAVY_DIAMOND_CHESTPLATE)
+                .add(ModItems.HEAVY_DIAMOND_LEGGINGS)
+                .add(ModItems.HEAVY_DIAMOND_BOOTS)
+                .add(ModItems.HEAVY_NETHERITE_HELMET)
+                .add(ModItems.HEAVY_NETHERITE_CHESTPLATE)
+                .add(ModItems.HEAVY_NETHERITE_LEGGINGS)
+                .add(ModItems.HEAVY_NETHERITE_BOOTS);
     }
 }

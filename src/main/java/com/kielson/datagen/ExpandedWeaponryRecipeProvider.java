@@ -165,6 +165,15 @@ public class ExpandedWeaponryRecipeProvider extends FabricRecipeProvider {
                 offerNetheriteUpgradeRecipe(ModItems.DIAMOND_SPEAR, RecipeCategory.COMBAT, ModItems.NETHERITE_SPEAR);
 
 
+                createShaped(RecipeCategory.COMBAT, ModItems.LONGBOW)
+                        .pattern("hhs")
+                        .pattern("h s")
+                        .pattern("hhs")
+                        .input('h', Items.STICK)
+                        .input('s', Items.STRING)
+                        .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                        .criterion(hasItem(Items.STRING), conditionsFromItem(Items.STRING))
+                        .offerTo(exporter);
                 createShaped(RecipeCategory.COMBAT, ModItems.SLINGSHOT)
                         .pattern("hsh")
                         .pattern(" h ")
@@ -173,7 +182,6 @@ public class ExpandedWeaponryRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                         .criterion(hasItem(Items.STRING), conditionsFromItem(Items.STRING))
                         .offerTo(exporter);
-
             }
         };
     }

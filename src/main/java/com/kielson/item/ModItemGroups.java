@@ -41,6 +41,26 @@ public class ModItemGroups {
             entries.add(ModItems.LONGBOW);
             entries.add(ModItems.SLINGSHOT);
 
+            entries.add(ModItems.HEAVY_IRON_HELMET);
+            entries.add(ModItems.HEAVY_IRON_CHESTPLATE);
+            entries.add(ModItems.HEAVY_IRON_LEGGINGS);
+            entries.add(ModItems.HEAVY_IRON_BOOTS);
+
+            entries.add(ModItems.HEAVY_GOLDEN_HELMET);
+            entries.add(ModItems.HEAVY_GOLDEN_CHESTPLATE);
+            entries.add(ModItems.HEAVY_GOLDEN_LEGGINGS);
+            entries.add(ModItems.HEAVY_GOLDEN_BOOTS);
+
+            entries.add(ModItems.HEAVY_DIAMOND_HELMET);
+            entries.add(ModItems.HEAVY_DIAMOND_CHESTPLATE);
+            entries.add(ModItems.HEAVY_DIAMOND_LEGGINGS);
+            entries.add(ModItems.HEAVY_DIAMOND_BOOTS);
+
+            entries.add(ModItems.HEAVY_NETHERITE_HELMET);
+            entries.add(ModItems.HEAVY_NETHERITE_CHESTPLATE);
+            entries.add(ModItems.HEAVY_NETHERITE_LEGGINGS);
+            entries.add(ModItems.HEAVY_NETHERITE_BOOTS);
+
         }).build());
 
     public static void initialize() {
@@ -72,6 +92,26 @@ public class ModItemGroups {
 
             content.addAfter(Items.BOW, ModItems.LONGBOW);
             content.addAfter(Items.CROSSBOW, ModItems.SLINGSHOT);
+
+            content.addBefore(Items.TURTLE_HELMET, ModItems.HEAVY_IRON_HELMET);
+            content.addBefore(Items.TURTLE_HELMET, ModItems.HEAVY_IRON_CHESTPLATE);
+            content.addBefore(Items.TURTLE_HELMET, ModItems.HEAVY_IRON_LEGGINGS);
+            content.addBefore(Items.TURTLE_HELMET, ModItems.HEAVY_IRON_BOOTS);
+
+            content.addBefore(Items.TURTLE_HELMET, ModItems.HEAVY_GOLDEN_HELMET);
+            content.addBefore(Items.TURTLE_HELMET, ModItems.HEAVY_GOLDEN_CHESTPLATE);
+            content.addBefore(Items.TURTLE_HELMET, ModItems.HEAVY_GOLDEN_LEGGINGS);
+            content.addBefore(Items.TURTLE_HELMET, ModItems.HEAVY_GOLDEN_BOOTS);
+
+            content.addBefore(Items.TURTLE_HELMET, ModItems.HEAVY_DIAMOND_HELMET);
+            content.addBefore(Items.TURTLE_HELMET, ModItems.HEAVY_DIAMOND_CHESTPLATE);
+            content.addBefore(Items.TURTLE_HELMET, ModItems.HEAVY_DIAMOND_LEGGINGS);
+            content.addBefore(Items.TURTLE_HELMET, ModItems.HEAVY_DIAMOND_BOOTS);
+
+            content.addBefore(Items.TURTLE_HELMET, ModItems.HEAVY_NETHERITE_HELMET);
+            content.addBefore(Items.TURTLE_HELMET, ModItems.HEAVY_NETHERITE_CHESTPLATE);
+            content.addBefore(Items.TURTLE_HELMET, ModItems.HEAVY_NETHERITE_LEGGINGS);
+            content.addBefore(Items.TURTLE_HELMET, ModItems.HEAVY_NETHERITE_BOOTS);
         });
     }
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "h": "minecraft:stick",
+    "s": "minecraft:string"
+  },
+  "pattern": [
+    "hhs",
+    "h s",
+    "hhs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "expanded_weaponry:longbow"
+  }
+}

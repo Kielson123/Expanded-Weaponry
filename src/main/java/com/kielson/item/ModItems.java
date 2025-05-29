@@ -1,12 +1,10 @@
 package com.kielson.item;
 
-import com.kielson.item.custom.DaggerItem;
-import com.kielson.item.custom.HammerItem;
-import com.kielson.item.custom.SlingshotItem;
-import com.kielson.item.custom.SpearItem;
+import com.kielson.item.custom.*;
 import com.kielson.util.ItemHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.item.equipment.EquipmentType;
 
 import static com.kielson.ExpandedWeaponry.MOD_ID;
 
@@ -63,15 +61,57 @@ public class ModItems {
     public static final Item SLINGSHOT = ItemHelper.registerItem(MOD_ID, "slingshot", SlingshotItem::new, new Item.Settings());
 
 
+    //Armor
+    public static final Item HEAVY_IRON_HELMET = ItemHelper.registerItem(MOD_ID, "heavy_iron_helmet", settings ->
+            new HeavyArmorItem(ModArmorMaterials.HEAVY_IRON, EquipmentType.HELMET, settings), new Item.Settings().armor(ModArmorMaterials.HEAVY_IRON, EquipmentType.HELMET));
+    public static final Item HEAVY_IRON_CHESTPLATE = ItemHelper.registerItem(MOD_ID, "heavy_iron_chestplate", settings ->
+            new HeavyArmorItem(ModArmorMaterials.HEAVY_IRON, EquipmentType.CHESTPLATE, settings), new Item.Settings().armor(ModArmorMaterials.HEAVY_IRON, EquipmentType.CHESTPLATE));
+    public static final Item HEAVY_IRON_LEGGINGS = ItemHelper.registerItem(MOD_ID, "heavy_iron_leggings", settings ->
+            new HeavyArmorItem(ModArmorMaterials.HEAVY_IRON, EquipmentType.LEGGINGS, settings), new Item.Settings().armor(ModArmorMaterials.HEAVY_IRON, EquipmentType.LEGGINGS));
+    public static final Item HEAVY_IRON_BOOTS = ItemHelper.registerItem(MOD_ID, "heavy_iron_boots", settings ->
+            new HeavyArmorItem(ModArmorMaterials.HEAVY_IRON, EquipmentType.BOOTS, settings), new Item.Settings().armor(ModArmorMaterials.HEAVY_IRON, EquipmentType.BOOTS));
+
+    public static final Item HEAVY_GOLDEN_HELMET = ItemHelper.registerItem(MOD_ID, "heavy_golden_helmet", settings ->
+            new HeavyArmorItem(ModArmorMaterials.HEAVY_GOLD, EquipmentType.HELMET, settings), new Item.Settings().armor(ModArmorMaterials.HEAVY_GOLD, EquipmentType.HELMET));
+    public static final Item HEAVY_GOLDEN_CHESTPLATE = ItemHelper.registerItem(MOD_ID, "heavy_golden_chestplate", settings ->
+            new HeavyArmorItem(ModArmorMaterials.HEAVY_GOLD, EquipmentType.CHESTPLATE, settings), new Item.Settings().armor(ModArmorMaterials.HEAVY_GOLD, EquipmentType.CHESTPLATE));
+    public static final Item HEAVY_GOLDEN_LEGGINGS = ItemHelper.registerItem(MOD_ID, "heavy_golden_leggings", settings ->
+            new HeavyArmorItem(ModArmorMaterials.HEAVY_GOLD, EquipmentType.LEGGINGS, settings), new Item.Settings().armor(ModArmorMaterials.HEAVY_GOLD, EquipmentType.LEGGINGS));
+    public static final Item HEAVY_GOLDEN_BOOTS = ItemHelper.registerItem(MOD_ID, "heavy_golden_boots", settings ->
+            new HeavyArmorItem(ModArmorMaterials.HEAVY_GOLD, EquipmentType.BOOTS, settings), new Item.Settings().armor(ModArmorMaterials.HEAVY_GOLD, EquipmentType.BOOTS));
+
+    public static final Item HEAVY_DIAMOND_HELMET = ItemHelper.registerItem(MOD_ID, "heavy_diamond_helmet", settings ->
+            new HeavyArmorItem(ModArmorMaterials.HEAVY_DIAMOND, EquipmentType.HELMET, settings), new Item.Settings().armor(ModArmorMaterials.HEAVY_DIAMOND, EquipmentType.HELMET));
+    public static final Item HEAVY_DIAMOND_CHESTPLATE = ItemHelper.registerItem(MOD_ID, "heavy_diamond_chestplate", settings ->
+            new HeavyArmorItem(ModArmorMaterials.HEAVY_DIAMOND, EquipmentType.CHESTPLATE, settings), new Item.Settings().armor(ModArmorMaterials.HEAVY_DIAMOND, EquipmentType.CHESTPLATE));
+    public static final Item HEAVY_DIAMOND_LEGGINGS = ItemHelper.registerItem(MOD_ID, "heavy_diamond_leggings", settings ->
+            new HeavyArmorItem(ModArmorMaterials.HEAVY_DIAMOND, EquipmentType.LEGGINGS, settings), new Item.Settings().armor(ModArmorMaterials.HEAVY_DIAMOND, EquipmentType.LEGGINGS));
+    public static final Item HEAVY_DIAMOND_BOOTS = ItemHelper.registerItem(MOD_ID, "heavy_diamond_boots", settings ->
+            new HeavyArmorItem(ModArmorMaterials.HEAVY_DIAMOND, EquipmentType.BOOTS, settings), new Item.Settings().armor(ModArmorMaterials.HEAVY_DIAMOND, EquipmentType.BOOTS));
+
+    public static final Item HEAVY_NETHERITE_HELMET = ItemHelper.registerItem(MOD_ID, "heavy_netherite_helmet", settings ->
+            new HeavyArmorItem(ModArmorMaterials.HEAVY_NETHERITE, EquipmentType.HELMET, settings), new Item.Settings().armor(ModArmorMaterials.HEAVY_NETHERITE, EquipmentType.HELMET).fireproof());
+    public static final Item HEAVY_NETHERITE_CHESTPLATE = ItemHelper.registerItem(MOD_ID, "heavy_netherite_chestplate", settings ->
+            new HeavyArmorItem(ModArmorMaterials.HEAVY_NETHERITE, EquipmentType.CHESTPLATE, settings), new Item.Settings().armor(ModArmorMaterials.HEAVY_NETHERITE, EquipmentType.CHESTPLATE).fireproof());
+    public static final Item HEAVY_NETHERITE_LEGGINGS = ItemHelper.registerItem(MOD_ID, "heavy_netherite_leggings", settings ->
+            new HeavyArmorItem(ModArmorMaterials.HEAVY_NETHERITE, EquipmentType.LEGGINGS, settings), new Item.Settings().armor(ModArmorMaterials.HEAVY_NETHERITE, EquipmentType.LEGGINGS).fireproof());
+    public static final Item HEAVY_NETHERITE_BOOTS = ItemHelper.registerItem(MOD_ID, "heavy_netherite_boots", settings ->
+            new HeavyArmorItem(ModArmorMaterials.HEAVY_NETHERITE, EquipmentType.BOOTS, settings), new Item.Settings().armor(ModArmorMaterials.HEAVY_NETHERITE, EquipmentType.BOOTS).fireproof());
+
+
+
     //Model generation
     public static final Item[] ITEMS_HANDHELD = new Item[]{
             WOODEN_DAGGER, STONE_DAGGER, IRON_DAGGER, GOLDEN_DAGGER, DIAMOND_DAGGER, NETHERITE_DAGGER,
     };
     public static final Item[] ITEMS_DEFAULT = new Item[]{
-
+            HEAVY_IRON_HELMET, HEAVY_IRON_CHESTPLATE, HEAVY_IRON_LEGGINGS, HEAVY_IRON_BOOTS,
+            HEAVY_GOLDEN_HELMET, HEAVY_GOLDEN_CHESTPLATE, HEAVY_GOLDEN_LEGGINGS, HEAVY_GOLDEN_BOOTS,
+            HEAVY_DIAMOND_HELMET, HEAVY_DIAMOND_CHESTPLATE, HEAVY_DIAMOND_LEGGINGS, HEAVY_DIAMOND_BOOTS,
+            HEAVY_NETHERITE_HELMET, HEAVY_NETHERITE_CHESTPLATE, HEAVY_NETHERITE_LEGGINGS, HEAVY_NETHERITE_BOOTS,
     };
     public static final Item[] ITEMS_CUSTOM = new Item[]{
-            WOODEN_SPEAR, STONE_SPEAR, IRON_SPEAR, GOLDEN_SPEAR, DIAMOND_SPEAR, NETHERITE_SPEAR
+            WOODEN_SPEAR, STONE_SPEAR, IRON_SPEAR, GOLDEN_SPEAR, DIAMOND_SPEAR, NETHERITE_SPEAR,
     };
 
     public static void initialize() {}
