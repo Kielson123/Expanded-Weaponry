@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:gold_ingot",
+    "b": "minecraft:gold_block"
+  },
+  "pattern": [
+    "#b#",
+    "# #",
+    "# #"
+  ],
+  "result": {
+    "count": 1,
+    "id": "expanded_weaponry:heavy_golden_leggings"
+  }
+}

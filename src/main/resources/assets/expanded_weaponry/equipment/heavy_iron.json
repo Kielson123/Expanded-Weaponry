@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "expanded_weaponry:heavy_iron"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "expanded_weaponry:heavy_iron"
+      }
+    ]
+  }
+}

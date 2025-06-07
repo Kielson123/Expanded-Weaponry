@@ -23,5 +23,25 @@
   "item.expanded_weaponry.netherite_spear": "Netherite Spear",
 
   "item.expanded_weaponry.longbow": "Longbow",
-  "item.expanded_weaponry.slingshot": "Slingshot"
+  "item.expanded_weaponry.slingshot": "Slingshot",
+
+  "item.expanded_weaponry.heavy_iron_boots": "Heavy Iron Boots",
+  "item.expanded_weaponry.heavy_iron_leggings": "Heavy Iron Leggings",
+  "item.expanded_weaponry.heavy_iron_chestplate": "Heavy Iron Chestplate",
+  "item.expanded_weaponry.heavy_iron_helmet": "Heavy Iron Helmet",
+
+  "item.expanded_weaponry.heavy_golden_boots": "Heavy Golden Boots",
+  "item.expanded_weaponry.heavy_golden_leggings": "Heavy Golden Leggings",
+  "item.expanded_weaponry.heavy_golden_chestplate": "Heavy Golden Chestplate",
+  "item.expanded_weaponry.heavy_golden_helmet": "Heavy Golden Helmet",
+
+  "item.expanded_weaponry.heavy_diamond_boots": "Heavy Diamond Boots",
+  "item.expanded_weaponry.heavy_diamond_leggings": "Heavy Diamond Leggings",
+  "item.expanded_weaponry.heavy_diamond_chestplate": "Heavy Diamond Chestplate",
+  "item.expanded_weaponry.heavy_diamond_helmet": "Heavy Diamond Helmet",
+
+  "item.expanded_weaponry.heavy_netherite_boots": "Heavy Netherite Boots",
+  "item.expanded_weaponry.heavy_netherite_leggings": "Heavy Netherite Leggings",
+  "item.expanded_weaponry.heavy_netherite_chestplate": "Heavy Netherite Chestplate",
+  "item.expanded_weaponry.heavy_netherite_helmet": "Heavy Netherite Helmet"
 }

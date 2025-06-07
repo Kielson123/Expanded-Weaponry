@@ -182,6 +182,104 @@ public class ExpandedWeaponryRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                         .criterion(hasItem(Items.STRING), conditionsFromItem(Items.STRING))
                         .offerTo(exporter);
+
+                createShaped(RecipeCategory.COMBAT, ModItems.HEAVY_IRON_BOOTS)
+                        .pattern("# #")
+                        .pattern("b #")
+                        .input('#', Items.IRON_INGOT)
+                        .input('b', Items.IRON_BLOCK)
+                        .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.HEAVY_IRON_LEGGINGS)
+                        .pattern("#b#")
+                        .pattern("# #")
+                        .pattern("# #")
+                        .input('#', Items.IRON_INGOT)
+                        .input('b', Items.IRON_BLOCK)
+                        .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.HEAVY_IRON_CHESTPLATE)
+                        .pattern("# #")
+                        .pattern("#b#")
+                        .pattern("###")
+                        .input('#', Items.IRON_INGOT)
+                        .input('b', Items.IRON_BLOCK)
+                        .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.HEAVY_IRON_HELMET)
+                        .pattern("#b#")
+                        .pattern("# #")
+                        .input('#', Items.IRON_INGOT)
+                        .input('b', Items.IRON_BLOCK)
+                        .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.COMBAT, ModItems.HEAVY_GOLDEN_BOOTS)
+                        .pattern("# #")
+                        .pattern("b #")
+                        .input('#', Items.GOLD_INGOT)
+                        .input('b', Items.GOLD_BLOCK)
+                        .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.HEAVY_GOLDEN_LEGGINGS)
+                        .pattern("#b#")
+                        .pattern("# #")
+                        .pattern("# #")
+                        .input('#', Items.GOLD_INGOT)
+                        .input('b', Items.GOLD_BLOCK)
+                        .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.HEAVY_GOLDEN_CHESTPLATE)
+                        .pattern("# #")
+                        .pattern("#b#")
+                        .pattern("###")
+                        .input('#', Items.GOLD_INGOT)
+                        .input('b', Items.GOLD_BLOCK)
+                        .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.HEAVY_GOLDEN_HELMET)
+                        .pattern("#b#")
+                        .pattern("# #")
+                        .input('#', Items.GOLD_INGOT)
+                        .input('b', Items.GOLD_BLOCK)
+                        .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.COMBAT, ModItems.HEAVY_DIAMOND_BOOTS)
+                        .pattern("# #")
+                        .pattern("b #")
+                        .input('#', Items.DIAMOND)
+                        .input('b', Items.DIAMOND_BLOCK)
+                        .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.HEAVY_DIAMOND_LEGGINGS)
+                        .pattern("#b#")
+                        .pattern("# #")
+                        .pattern("# #")
+                        .input('#', Items.DIAMOND)
+                        .input('b', Items.DIAMOND_BLOCK)
+                        .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.HEAVY_DIAMOND_CHESTPLATE)
+                        .pattern("# #")
+                        .pattern("#b#")
+                        .pattern("###")
+                        .input('#', Items.DIAMOND)
+                        .input('b', Items.DIAMOND_BLOCK)
+                        .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.HEAVY_DIAMOND_HELMET)
+                        .pattern("#b#")
+                        .pattern("# #")
+                        .input('#', Items.DIAMOND)
+                        .input('b', Items.DIAMOND_BLOCK)
+                        .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                        .offerTo(exporter);
+
+                offerNetheriteUpgradeRecipe(ModItems.HEAVY_DIAMOND_BOOTS, RecipeCategory.COMBAT, ModItems.HEAVY_NETHERITE_BOOTS);
+                offerNetheriteUpgradeRecipe(ModItems.HEAVY_DIAMOND_LEGGINGS, RecipeCategory.COMBAT, ModItems.HEAVY_NETHERITE_LEGGINGS);
+                offerNetheriteUpgradeRecipe(ModItems.HEAVY_DIAMOND_CHESTPLATE, RecipeCategory.COMBAT, ModItems.HEAVY_NETHERITE_CHESTPLATE);
+                offerNetheriteUpgradeRecipe(ModItems.HEAVY_DIAMOND_HELMET, RecipeCategory.COMBAT, ModItems.HEAVY_NETHERITE_HELMET);
             }
         };
     }

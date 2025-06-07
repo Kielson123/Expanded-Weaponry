@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:iron_ingot",
+    "b": "minecraft:iron_block"
+  },
+  "pattern": [
+    "#b#",
+    "# #"
+  ],
+  "result": {
+    "count": 1,
+    "id": "expanded_weaponry:heavy_iron_helmet"
+  }
+}

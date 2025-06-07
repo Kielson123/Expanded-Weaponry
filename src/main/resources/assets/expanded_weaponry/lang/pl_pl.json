@@ -1,5 +1,6 @@
 {
   "itemGroup.expanded_weaponry": "Expanded Weaponry",
+
   "item.expanded_weaponry.wooden_dagger": "Drewniany sztylet",
   "item.expanded_weaponry.stone_dagger": "Kamienny sztylet",
   "item.expanded_weaponry.iron_dagger": "Żelazny sztylet",
@@ -22,5 +23,25 @@
   "item.expanded_weaponry.netherite_spear": "Netherytowa włócznia",
 
   "item.expanded_weaponry.longbow": "Długi łuk",
-  "item.expanded_weaponry.slingshot": "Proca"
+  "item.expanded_weaponry.slingshot": "Proca",
+
+  "item.expanded_weaponry.heavy_iron_boots": "Ciężkie żelazne buty",
+  "item.expanded_weaponry.heavy_iron_leggings": "Ciężkie żelazne nogawice",
+  "item.expanded_weaponry.heavy_iron_chestplate": "Ciężki żelazny napierśnik",
+  "item.expanded_weaponry.heavy_iron_helmet": "Ciężki żelazny hełm",
+
+  "item.expanded_weaponry.heavy_golden_boots": "Ciężkie złote buty",
+  "item.expanded_weaponry.heavy_golden_leggings": "Ciężkie złote nogawice",
+  "item.expanded_weaponry.heavy_golden_chestplate": "Ciężki złoty napierśnik",
+  "item.expanded_weaponry.heavy_golden_helmet": "Ciężki złoty hełm",
+
+  "item.expanded_weaponry.heavy_diamond_boots": "Ciężkie diamentowe buty",
+  "item.expanded_weaponry.heavy_diamond_leggings": "Ciężkie diamentowe nogawice",
+  "item.expanded_weaponry.heavy_diamond_chestplate": "Ciężki diamentowy napierśnik",
+  "item.expanded_weaponry.heavy_diamond_helmet": "Ciężki diamentowy hełm",
+
+  "item.expanded_weaponry.heavy_netherite_boots": "Ciężkie netherytowe buty",
+  "item.expanded_weaponry.heavy_netherite_leggings": "Ciężkie netherytowe nogawice",
+  "item.expanded_weaponry.heavy_netherite_chestplate": "Ciężki netherytowy napierśnik",
+  "item.expanded_weaponry.heavy_netherite_helmet": "Ciężki netherytowy hełm"
 }

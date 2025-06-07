@@ -3,13 +3,13 @@ package com.kielson.item;
 import net.minecraft.item.equipment.ArmorMaterial;
 import net.minecraft.item.equipment.ArmorMaterials;
 import net.minecraft.item.equipment.EquipmentAsset;
-import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 
 import static com.kielson.ExpandedWeaponry.MOD_ID;
+import static net.minecraft.item.equipment.EquipmentAssetKeys.REGISTRY_KEY;
 
 public interface  ModArmorMaterials extends ArmorMaterials {
     /*  i - durability
@@ -31,8 +31,6 @@ public interface  ModArmorMaterials extends ArmorMaterials {
 
 
     class ModEquipmentAssetKeys {
-        static RegistryKey<? extends Registry<EquipmentAsset>> REGISTRY_KEY = RegistryKey.ofRegistry(Identifier.of(MOD_ID, "equipment_asset"));
-
         static RegistryKey<EquipmentAsset> HEAVY_IRON = register("heavy_iron");
         static RegistryKey<EquipmentAsset> HEAVY_GOLD = register("heavy_gold");
         static RegistryKey<EquipmentAsset> HEAVY_DIAMOND = register("heavy_diamond");
