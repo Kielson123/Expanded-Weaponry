@@ -7,7 +7,7 @@ import net.minecraft.util.Identifier;
 
 import static com.kielson.ExpandedWeaponry.MOD_ID;
 
-public class ModTags {
+public class ExpandedWeaponryTags {
     public static final TagKey<Item> SLINGSHOT_PROJECTILES = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "slingshot_projectiles"));
     public static final TagKey<Item> DAGGERS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "daggers"));
     public static final TagKey<Item> HAMMERS = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "hammers"));

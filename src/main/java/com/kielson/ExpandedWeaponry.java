@@ -1,7 +1,7 @@
 package com.kielson;
 
-import com.kielson.item.ModItemGroups;
-import com.kielson.item.ModItems;
+import com.kielson.item.ExpandedWeaponryItemGroups;
+import com.kielson.item.ExpandedWeaponryItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,8 +12,8 @@ public class ExpandedWeaponry implements ModInitializer {
 
 	@Override
 	public void onInitialize(){
-		ModItems.initialize();
-		ModItemGroups.initialize();
-		ModTags.initialize();
+		ExpandedWeaponryItems.initialize();
+		ExpandedWeaponryItemGroups.initialize();
+		ExpandedWeaponryTags.initialize();
 	}
 }

@@ -1,6 +1,6 @@
 package com.kielson.item.custom;
 
-import com.kielson.ModTags;
+import com.kielson.ExpandedWeaponryTags;
 import com.kielson.item.CustomBow;
 import net.minecraft.item.ItemStack;
 import java.util.function.Predicate;
@@ -12,7 +12,7 @@ public class SlingshotItem extends CustomBow {
 
     @Override
     public Predicate<ItemStack> getProjectiles() {
-        return stack -> stack.isIn(ModTags.SLINGSHOT_PROJECTILES);
+        return stack -> stack.isIn(ExpandedWeaponryTags.SLINGSHOT_PROJECTILES);
     }
 
     @Override

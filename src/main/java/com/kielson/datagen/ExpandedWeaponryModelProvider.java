@@ -1,6 +1,6 @@
 package com.kielson.datagen;
 
-import com.kielson.item.ModItems;
+import com.kielson.item.ExpandedWeaponryItems;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
@@ -23,13 +23,13 @@ public class ExpandedWeaponryModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        for (Item item : ModItems.ITEMS_HANDHELD) {
+        for (Item item : ExpandedWeaponryItems.ITEMS_HANDHELD) {
             itemModelGenerator.register(item, Models.HANDHELD);
         }
-        for (Item item : ModItems.ITEMS_DEFAULT) {
+        for (Item item : ExpandedWeaponryItems.ITEMS_DEFAULT) {
             itemModelGenerator.register(item, Models.GENERATED);
         }
-        for (Item item : ModItems.ITEMS_CUSTOM) {
+        for (Item item : ExpandedWeaponryItems.ITEMS_CUSTOM) {
             itemModelGenerator.register(item);
         }
     }

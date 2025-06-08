@@ -1,8 +1,7 @@
 package com.kielson.mixin;
 
-import com.kielson.ModTags;
-import com.kielson.datagen.ExpandedWeaponryTagProvider;
-import com.kielson.item.ModItems;
+import com.kielson.ExpandedWeaponryTags;
+import com.kielson.item.ExpandedWeaponryItems;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -10,7 +9,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
@@ -57,7 +55,7 @@ public abstract class ArrowEntityMixin extends PersistentProjectileEntity {
         if(stack == null || shotFrom == null){
             return;
         }
-        if(stack.isIn(ModTags.SLINGSHOT_PROJECTILES) && shotFrom.isOf(ModItems.SLINGSHOT) && arrowEntity.isInGround() && arrowEntity.inGroundTime != 0){
+        if(stack.isIn(ExpandedWeaponryTags.SLINGSHOT_PROJECTILES) && shotFrom.isOf(ExpandedWeaponryItems.SLINGSHOT) && arrowEntity.isInGround() && arrowEntity.inGroundTime != 0){
             if(owner instanceof PlayerEntity player && !player.isInCreativeMode()){
                 int chance = new Random().nextInt(0, 2);
                 if(chance == 1){
@@ -73,7 +71,7 @@ public abstract class ArrowEntityMixin extends PersistentProjectileEntity {
         if(stack == null || shotFrom == null){
             return;
         }
-        if(stack.isIn(ModTags.SLINGSHOT_PROJECTILES) && shotFrom.isOf(ModItems.SLINGSHOT) && arrowEntity.isInGround() && arrowEntity.inGroundTime != 0){
+        if(stack.isIn(ExpandedWeaponryTags.SLINGSHOT_PROJECTILES) && shotFrom.isOf(ExpandedWeaponryItems.SLINGSHOT) && arrowEntity.isInGround() && arrowEntity.inGroundTime != 0){
             if(owner instanceof PlayerEntity player && !player.isInCreativeMode()){
                 arrowEntity.dropItem((ServerWorld) world, stack.getItem());
             }

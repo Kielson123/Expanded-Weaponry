@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 import static com.kielson.ExpandedWeaponry.MOD_ID;
 import static net.minecraft.item.equipment.EquipmentAssetKeys.REGISTRY_KEY;
 
-public interface  ModArmorMaterials extends ArmorMaterials {
+public interface ExpandedWeaponryArmorMaterials extends ArmorMaterials {
     /*  i - durability
         j - enchantability
         f - toughness
