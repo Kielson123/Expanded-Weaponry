@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "expanded_weaponry:heavy_golden_boots",
+    "expanded_weaponry:heavy_iron_boots",
+    "expanded_weaponry:heavy_diamond_boots",
+    "expanded_weaponry:heavy_netherite_boots"
+  ]
+}

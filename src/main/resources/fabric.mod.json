@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "expanded_weaponry",
-	"version": "0.5",
+	"version": "0.6",
 	"name": "Expanded Weaponry",
 	"description": "A mod that aims to expand on Minecraft combat through new equipment.",
 	"authors": [
@@ -28,10 +28,10 @@
 		"expanded_weaponry.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.14",
-		"minecraft": "~1.21.5",
+		"fabricloader": ">=0.16.0",
+		"minecraft": ">=1.21.6",
 		"java": ">=21",
-		"fabric-api": ">=0.124.2"
+		"fabric-api": ">=0.129.0+1.21.6"
 	},
 	"accessWidener" : "expanded_weaponry.accesswidener"
 }

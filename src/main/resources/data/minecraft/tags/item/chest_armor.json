@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "expanded_weaponry:heavy_golden_chestplate",
+    "expanded_weaponry:heavy_iron_chestplate",
+    "expanded_weaponry:heavy_diamond_chestplate",
+    "expanded_weaponry:heavy_netherite_chestplate"
+  ]
+}

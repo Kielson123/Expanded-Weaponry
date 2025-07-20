@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#expanded_weaponry:daggers",
+    "#expanded_weaponry:hammers",
+    "#expanded_weaponry:spears"
+  ]
+}
