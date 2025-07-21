@@ -10,7 +10,7 @@
 	"contact": {
 		"sources": "https://github.com/Kielson123/Expanded-Weaponry"
 	},
-	"license": "GNU GPL-3.0",
+	"license": "All-Rights-Reserved",
 	"icon": "assets/expanded_weaponry/icon.png",
 	"environment": "*",
 	"entrypoints": {
