@@ -1,39 +1,39 @@
 package com.kielson.item.custom;
 
-import net.minecraft.component.type.AttributeModifierSlot;
-import net.minecraft.component.type.AttributeModifiersComponent;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.item.Item;
-import net.minecraft.item.equipment.ArmorMaterial;
-import net.minecraft.item.equipment.EquipmentType;
-import net.minecraft.util.Identifier;
-
 import static com.kielson.ExpandedWeaponry.MOD_ID;
 
+import net.minecraft.resources.Identifier;
+import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
+import net.minecraft.world.item.equipment.ArmorMaterial;
+import net.minecraft.world.item.equipment.ArmorType;
+
 public class HeavyArmorItem extends Item {
-    public HeavyArmorItem(ArmorMaterial material, EquipmentType equipmentType, Settings settings) {
-        super(settings.armor(material, equipmentType).attributeModifiers(createAttributeModifiers(material, equipmentType)));
+    public HeavyArmorItem(ArmorMaterial material, ArmorType equipmentType, Properties settings) {
+        super(settings.humanoidArmor(material, equipmentType).attributes(createAttributeModifiers(material, equipmentType)));
     }
 
-    private static AttributeModifiersComponent createAttributeModifiers(ArmorMaterial material, EquipmentType equipmentType){
-        AttributeModifierSlot slot;
+    private static ItemAttributeModifiers createAttributeModifiers(ArmorMaterial material, ArmorType equipmentType){
+        EquipmentSlotGroup slot;
         switch (equipmentType){
-            case HELMET -> slot = AttributeModifierSlot.HEAD;
-            case CHESTPLATE -> slot = AttributeModifierSlot.CHEST;
-            case LEGGINGS -> slot = AttributeModifierSlot.LEGS;
-            case BOOTS -> slot = AttributeModifierSlot.FEET;
-            default -> slot = AttributeModifierSlot.BODY;
+            case HELMET -> slot = EquipmentSlotGroup.HEAD;
+            case CHESTPLATE -> slot = EquipmentSlotGroup.CHEST;
+            case LEGGINGS -> slot = EquipmentSlotGroup.LEGS;
+            case BOOTS -> slot = EquipmentSlotGroup.FEET;
+            default -> slot = EquipmentSlotGroup.BODY;
         }
-        return AttributeModifiersComponent.builder()
-                .add(EntityAttributes.ARMOR, new EntityAttributeModifier(Identifier.of(MOD_ID, "armor_defense." + slot.asString()),
-                        material.defense().get(equipmentType), EntityAttributeModifier.Operation.ADD_VALUE), slot)
-                .add(EntityAttributes.ARMOR_TOUGHNESS, new EntityAttributeModifier(Identifier.of(MOD_ID, "armor_toughness." + slot.asString()),
-                        material.toughness(), EntityAttributeModifier.Operation.ADD_VALUE), slot)
-                .add(EntityAttributes.KNOCKBACK_RESISTANCE, new EntityAttributeModifier(Identifier.of(MOD_ID, "armor_knockback_resistance." + slot.asString()),
-                        material.knockbackResistance(), EntityAttributeModifier.Operation.ADD_VALUE), slot)
-                .add(EntityAttributes.MOVEMENT_SPEED, new EntityAttributeModifier(Identifier.of(MOD_ID, "armor_slowness." + slot.asString()),
-                        -0.04, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE), slot)
+        return ItemAttributeModifiers.builder()
+                .add(Attributes.ARMOR, new AttributeModifier(Identifier.fromNamespaceAndPath(MOD_ID, "armor_defense." + slot.getSerializedName()),
+                        material.defense().get(equipmentType), AttributeModifier.Operation.ADD_VALUE), slot)
+                .add(Attributes.ARMOR_TOUGHNESS, new AttributeModifier(Identifier.fromNamespaceAndPath(MOD_ID, "armor_toughness." + slot.getSerializedName()),
+                        material.toughness(), AttributeModifier.Operation.ADD_VALUE), slot)
+                .add(Attributes.KNOCKBACK_RESISTANCE, new AttributeModifier(Identifier.fromNamespaceAndPath(MOD_ID, "armor_knockback_resistance." + slot.getSerializedName()),
+                        material.knockbackResistance(), AttributeModifier.Operation.ADD_VALUE), slot)
+                .add(Attributes.MOVEMENT_SPEED, new AttributeModifier(Identifier.fromNamespaceAndPath(MOD_ID, "armor_slowness." + slot.getSerializedName()),
+                        -0.04, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), slot)
                 .build();
     }
 }

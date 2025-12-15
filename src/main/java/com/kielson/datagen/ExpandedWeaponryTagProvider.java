@@ -4,25 +4,23 @@ import com.kielson.ExpandedWeaponryTags;
 import com.kielson.item.ExpandedWeaponryItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.item.Items;
-import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.TagEntry;
-import net.minecraft.util.Identifier;
-
+import net.minecraft.core.HolderLookup;
+import net.minecraft.world.item.Items;
 import java.util.concurrent.CompletableFuture;
 
 import static com.kielson.ExpandedWeaponry.MOD_ID;
 
 public class ExpandedWeaponryTagProvider extends FabricTagProvider.ItemTagProvider {
-    public ExpandedWeaponryTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> completableFuture) {
+    public ExpandedWeaponryTagProvider(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> completableFuture) {
         super(output, completableFuture);
     }
 
     @Override
-    protected void configure(RegistryWrapper.WrapperLookup arg) {
+    protected void addTags(HolderLookup.Provider arg) {
         valueLookupBuilder(ExpandedWeaponryTags.DAGGERS)
                 .add(ExpandedWeaponryItems.WOODEN_DAGGER)
                 .add(ExpandedWeaponryItems.STONE_DAGGER)
+                .add(ExpandedWeaponryItems.COPPER_DAGGER)
                 .add(ExpandedWeaponryItems.IRON_DAGGER)
                 .add(ExpandedWeaponryItems.GOLDEN_DAGGER)
                 .add(ExpandedWeaponryItems.DIAMOND_DAGGER)
@@ -31,18 +29,11 @@ public class ExpandedWeaponryTagProvider extends FabricTagProvider.ItemTagProvid
         valueLookupBuilder(ExpandedWeaponryTags.HAMMERS)
                 .add(ExpandedWeaponryItems.WOODEN_HAMMER)
                 .add(ExpandedWeaponryItems.STONE_HAMMER)
+                .add(ExpandedWeaponryItems.COPPER_HAMMER)
                 .add(ExpandedWeaponryItems.IRON_HAMMER)
                 .add(ExpandedWeaponryItems.GOLDEN_HAMMER)
                 .add(ExpandedWeaponryItems.DIAMOND_HAMMER)
                 .add(ExpandedWeaponryItems.NETHERITE_HAMMER);
-
-        valueLookupBuilder(ExpandedWeaponryTags.SPEARS)
-                .add(ExpandedWeaponryItems.WOODEN_SPEAR)
-                .add(ExpandedWeaponryItems.STONE_SPEAR)
-                .add(ExpandedWeaponryItems.IRON_SPEAR)
-                .add(ExpandedWeaponryItems.GOLDEN_SPEAR)
-                .add(ExpandedWeaponryItems.DIAMOND_SPEAR)
-                .add(ExpandedWeaponryItems.NETHERITE_SPEAR);
 
         valueLookupBuilder(ExpandedWeaponryTags.BOWS)
                 .add(ExpandedWeaponryItems.LONGBOW);
@@ -53,6 +44,10 @@ public class ExpandedWeaponryTagProvider extends FabricTagProvider.ItemTagProvid
                 .add(Items.FLINT);
 
         valueLookupBuilder(ExpandedWeaponryTags.HEAVY_ARMORS)
+                .add(ExpandedWeaponryItems.HEAVY_COPPER_HELMET)
+                .add(ExpandedWeaponryItems.HEAVY_COPPER_CHESTPLATE)
+                .add(ExpandedWeaponryItems.HEAVY_COPPER_LEGGINGS)
+                .add(ExpandedWeaponryItems.HEAVY_COPPER_BOOTS)
                 .add(ExpandedWeaponryItems.HEAVY_IRON_HELMET)
                 .add(ExpandedWeaponryItems.HEAVY_IRON_CHESTPLATE)
                 .add(ExpandedWeaponryItems.HEAVY_IRON_LEGGINGS)

@@ -5,10 +5,10 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.minecraft.client.data.BlockStateModelGenerator;
-import net.minecraft.client.data.ItemModelGenerator;
-import net.minecraft.client.data.Models;
-import net.minecraft.item.Item;
+import net.minecraft.client.data.models.BlockModelGenerators;
+import net.minecraft.client.data.models.ItemModelGenerators;
+import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.world.item.Item;
 
 @Environment(EnvType.CLIENT)
 public class ExpandedWeaponryModelProvider extends FabricModelProvider {
@@ -17,20 +17,20 @@ public class ExpandedWeaponryModelProvider extends FabricModelProvider {
     }
 
     @Override
-    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+    public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
 
     }
 
     @Override
-    public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+    public void generateItemModels(ItemModelGenerators itemModelGenerator) {
         for (Item item : ExpandedWeaponryItems.ITEMS_HANDHELD) {
-            itemModelGenerator.register(item, Models.HANDHELD);
+            itemModelGenerator.generateFlatItem(item, ModelTemplates.FLAT_HANDHELD_ITEM);
         }
         for (Item item : ExpandedWeaponryItems.ITEMS_DEFAULT) {
-            itemModelGenerator.register(item, Models.GENERATED);
+            itemModelGenerator.generateFlatItem(item, ModelTemplates.FLAT_ITEM);
         }
         for (Item item : ExpandedWeaponryItems.ITEMS_CUSTOM) {
-            itemModelGenerator.register(item);
+            itemModelGenerator.declareCustomModelItem(item);
         }
     }
 }

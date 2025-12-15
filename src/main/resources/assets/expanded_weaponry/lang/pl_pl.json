@@ -3,6 +3,7 @@
 
   "item.expanded_weaponry.wooden_dagger": "Drewniany sztylet",
   "item.expanded_weaponry.stone_dagger": "Kamienny sztylet",
+  "item.expanded_weaponry.copper_dagger": "Miedziany sztylet",
   "item.expanded_weaponry.iron_dagger": "Żelazny sztylet",
   "item.expanded_weaponry.golden_dagger": "Złoty sztylet",
   "item.expanded_weaponry.diamond_dagger": "Diamentowy sztylet",
@@ -10,20 +11,19 @@
 
   "item.expanded_weaponry.wooden_hammer": "Drewniany młot",
   "item.expanded_weaponry.stone_hammer": "Kamienny młot",
+  "item.expanded_weaponry.copper_hammer": "Miedziany młot",
   "item.expanded_weaponry.iron_hammer": "Żelazny młot",
   "item.expanded_weaponry.golden_hammer": "Złoty młot",
   "item.expanded_weaponry.diamond_hammer": "Diamentowy młot",
   "item.expanded_weaponry.netherite_hammer": "Netherytowy młot",
 
-  "item.expanded_weaponry.wooden_spear": "Drewniana włócznia",
-  "item.expanded_weaponry.stone_spear": "Kamienna włócznia",
-  "item.expanded_weaponry.iron_spear": "Żelazna włócznia",
-  "item.expanded_weaponry.golden_spear": "Złota włócznia",
-  "item.expanded_weaponry.diamond_spear": "Diamentowa włócznia",
-  "item.expanded_weaponry.netherite_spear": "Netherytowa włócznia",
-
   "item.expanded_weaponry.longbow": "Długi łuk",
   "item.expanded_weaponry.slingshot": "Proca",
+
+  "item.expanded_weaponry.heavy_copper_boots": "Ciężkie miedziane buty",
+  "item.expanded_weaponry.heavy_copper_leggings": "Ciężkie miedziane nogawice",
+  "item.expanded_weaponry.heavy_copper_chestplate": "Ciężki miedziany napierśnik",
+  "item.expanded_weaponry.heavy_copper_helmet": "Ciężki miedziany hełm",
 
   "item.expanded_weaponry.heavy_iron_boots": "Ciężkie żelazne buty",
   "item.expanded_weaponry.heavy_iron_leggings": "Ciężkie żelazne nogawice",

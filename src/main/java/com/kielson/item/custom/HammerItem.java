@@ -1,25 +1,25 @@
 package com.kielson.item.custom;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ToolMaterial;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
-
 import static com.kielson.KielsonsAPIComponents.TWO_HANDED;
 
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ToolMaterial;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
+
 public class HammerItem extends Item {
-    public HammerItem(ToolMaterial toolMaterial, Item.Settings settings) {
+    public HammerItem(ToolMaterial toolMaterial, Item.Properties settings) {
         super(settings
-                .sword(toolMaterial, 7.0f, -3.4f)
-                .maxDamage((int) (toolMaterial.durability() * 1.1))
+                .axe(toolMaterial, 7.0f, -3.5f)
+                .durability((int) (toolMaterial.durability() * 1.1))
                 .component(TWO_HANDED, Boolean.TRUE));
     }
 
     @Override
-    public boolean canMine(ItemStack stack, BlockState state, World world, BlockPos pos, LivingEntity user) {
-        return !user.isInCreativeMode();
+    public boolean canDestroyBlock(ItemStack stack, BlockState state, Level world, BlockPos pos, LivingEntity user) {
+        return !user.hasInfiniteMaterials();
     }
 }

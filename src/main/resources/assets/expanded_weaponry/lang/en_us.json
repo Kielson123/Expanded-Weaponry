@@ -3,6 +3,7 @@
 
   "item.expanded_weaponry.wooden_dagger": "Wooden Dagger",
   "item.expanded_weaponry.stone_dagger": "Stone Dagger",
+  "item.expanded_weaponry.copper_dagger": "Copper Dagger",
   "item.expanded_weaponry.iron_dagger": "Iron Dagger",
   "item.expanded_weaponry.golden_dagger": "Golden Dagger",
   "item.expanded_weaponry.diamond_dagger": "Diamond Dagger",
@@ -10,20 +11,19 @@
 
   "item.expanded_weaponry.wooden_hammer": "Wooden Hammer",
   "item.expanded_weaponry.stone_hammer": "Stone Hammer",
+  "item.expanded_weaponry.copper_hammer": "Copper Hammer",
   "item.expanded_weaponry.iron_hammer": "Iron Hammer",
   "item.expanded_weaponry.golden_hammer": "Golden Hammer",
   "item.expanded_weaponry.diamond_hammer": "Diamond Hammer",
   "item.expanded_weaponry.netherite_hammer": "Netherite Hammer",
 
-  "item.expanded_weaponry.wooden_spear": "Wooden Spear",
-  "item.expanded_weaponry.stone_spear": "Stone Spear",
-  "item.expanded_weaponry.iron_spear": "Iron Spear",
-  "item.expanded_weaponry.golden_spear": "Golden Spear",
-  "item.expanded_weaponry.diamond_spear": "Diamond Spear",
-  "item.expanded_weaponry.netherite_spear": "Netherite Spear",
-
   "item.expanded_weaponry.longbow": "Longbow",
   "item.expanded_weaponry.slingshot": "Slingshot",
+
+  "item.expanded_weaponry.heavy_copper_boots": "Heavy Copper Boots",
+  "item.expanded_weaponry.heavy_copper_leggings": "Heavy Copper Leggings",
+  "item.expanded_weaponry.heavy_copper_chestplate": "Heavy Copper Chestplate",
+  "item.expanded_weaponry.heavy_copper_helmet": "Heavy Copper Helmet",
 
   "item.expanded_weaponry.heavy_iron_boots": "Heavy Iron Boots",
   "item.expanded_weaponry.heavy_iron_leggings": "Heavy Iron Leggings",

@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "#expanded_weaponry:bows",
-    "#expanded_weaponry:hammers",
-    "#expanded_weaponry:spears"
+    "#expanded_weaponry:hammers"
   ]
 }
