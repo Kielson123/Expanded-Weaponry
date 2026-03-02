@@ -18,6 +18,10 @@ repositories {
 			includeGroup "maven.modrinth"
 		}
 	}
+	maven {
+		name = 'ParchmentMC'
+		url = 'https://maven.parchmentmc.org'
+	}
 }
 
 loom {
@@ -32,10 +36,14 @@ fabricApi {
 dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	mappings loom.officialMojangMappings()
 
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 	include(modApi("maven.modrinth:kielsons-api:${project.kielsonsapi_version}"))
+
+	mappings loom.layered() {
+		officialMojangMappings()
+		parchment("org.parchmentmc.data:parchment-1.21.11:2025.12.20@zip")
+	}
 }
 
 processResources {
@@ -89,5 +97,6 @@ modrinth {
 	dependencies {
 		required.project "fabric-api"
 		embedded.project "kielsons-api"
+		optional.project "better-combat"
 	}
 }

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#expanded_weaponry:daggers"
+    "#expanded_weaponry:daggers",
+    "#expanded_weaponry:twin_blade_swords",
+    "#expanded_weaponry:greatswords"
   ]
 }

@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "#expanded_weaponry:daggers",
-    "#expanded_weaponry:hammers"
+    "#expanded_weaponry:hammers",
+    "#expanded_weaponry:twin_blade_swords",
+    "#expanded_weaponry:greatswords"
   ]
 }

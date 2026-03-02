@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "expanded_weaponry:item/golden_twin_blade_sword_gui"
+  }
+}

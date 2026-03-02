@@ -42,6 +42,38 @@ public class ExpandedWeaponryItems {
     public static final Item NETHERITE_HAMMER = ItemHelper.registerItem(MOD_ID, "netherite_hammer",
             settings -> new HammerItem(ToolMaterial.NETHERITE, settings.fireResistant()), new Item.Properties());
 
+    //Twin Blade Swords
+    public static final Item WOODEN_TWIN_BLADE_SWORD = ItemHelper.registerItem(MOD_ID, "wooden_twin_blade_sword",
+            settings -> new TwinBladeSwordItem(ToolMaterial.WOOD, settings), new Item.Properties());
+    public static final Item STONE_TWIN_BLADE_SWORD = ItemHelper.registerItem(MOD_ID, "stone_twin_blade_sword",
+            settings -> new TwinBladeSwordItem(ToolMaterial.STONE, settings), new Item.Properties());
+    public static final Item COPPER_TWIN_BLADE_SWORD = ItemHelper.registerItem(MOD_ID, "copper_twin_blade_sword",
+            settings -> new TwinBladeSwordItem(ToolMaterial.COPPER, settings), new Item.Properties());
+    public static final Item IRON_TWIN_BLADE_SWORD = ItemHelper.registerItem(MOD_ID, "iron_twin_blade_sword",
+            settings -> new TwinBladeSwordItem(ToolMaterial.IRON, settings), new Item.Properties());
+    public static final Item GOLDEN_TWIN_BLADE_SWORD = ItemHelper.registerItem(MOD_ID, "golden_twin_blade_sword",
+            settings -> new TwinBladeSwordItem(ToolMaterial.GOLD, settings), new Item.Properties());
+    public static final Item DIAMOND_TWIN_BLADE_SWORD = ItemHelper.registerItem(MOD_ID, "diamond_twin_blade_sword",
+            settings -> new TwinBladeSwordItem(ToolMaterial.DIAMOND, settings), new Item.Properties());
+    public static final Item NETHERITE_TWIN_BLADE_SWORD = ItemHelper.registerItem(MOD_ID, "netherite_twin_blade_sword",
+            settings -> new TwinBladeSwordItem(ToolMaterial.NETHERITE, settings), new Item.Properties());
+
+    //Greatswords
+    public static final Item WOODEN_GREATSWORD = ItemHelper.registerItem(MOD_ID, "wooden_greatsword",
+            settings -> new GreatswordItem(ToolMaterial.WOOD, settings), new Item.Properties());
+    public static final Item STONE_GREATSWORD = ItemHelper.registerItem(MOD_ID, "stone_greatsword",
+            settings -> new GreatswordItem(ToolMaterial.STONE, settings), new Item.Properties());
+    public static final Item COPPER_GREATSWORD = ItemHelper.registerItem(MOD_ID, "copper_greatsword",
+            settings -> new GreatswordItem(ToolMaterial.COPPER, settings), new Item.Properties());
+    public static final Item IRON_GREATSWORD = ItemHelper.registerItem(MOD_ID, "iron_greatsword",
+            settings -> new GreatswordItem(ToolMaterial.IRON, settings), new Item.Properties());
+    public static final Item GOLDEN_GREATSWORD = ItemHelper.registerItem(MOD_ID, "golden_greatsword",
+            settings -> new GreatswordItem(ToolMaterial.GOLD, settings), new Item.Properties());
+    public static final Item DIAMOND_GREATSWORD = ItemHelper.registerItem(MOD_ID, "diamond_greatsword",
+            settings -> new GreatswordItem(ToolMaterial.DIAMOND, settings), new Item.Properties());
+    public static final Item NETHERITE_GREATSWORD = ItemHelper.registerItem(MOD_ID, "netherite_greatsword",
+            settings -> new GreatswordItem(ToolMaterial.NETHERITE, settings), new Item.Properties());
+
     //Ranged
     public static final Item LONGBOW = ItemHelper.registerItem(MOD_ID, "longbow",
             settings -> new CustomBow(8.5, 1.8, 3.75, settings.durability(428)), new Item.Properties());

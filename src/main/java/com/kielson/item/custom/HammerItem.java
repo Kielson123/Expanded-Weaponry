@@ -14,12 +14,12 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class HammerItem extends Item {
     private static final float ATTACK_DAMAGE = 7.0f;
-    private static final float ATTACK_SPEED = -3.25f;
+    private static final float ATTACK_SPEED = -3.3f;
     private static final float ATTACK_RANGE_MIN = 1.5f;
     private static final float ATTACK_RANGE_MAX = 3.0f;
 
-    public HammerItem(ToolMaterial toolMaterial, Item.Properties settings) {
-        super(settings
+    public HammerItem(ToolMaterial toolMaterial, Properties properties) {
+        super(properties
                 .axe(toolMaterial, ATTACK_DAMAGE, ATTACK_SPEED)
                 .durability((int) (toolMaterial.durability() * 1.1))
                 .component(TWO_HANDED, Boolean.TRUE)

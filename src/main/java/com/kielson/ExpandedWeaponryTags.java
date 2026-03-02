@@ -11,6 +11,8 @@ public class ExpandedWeaponryTags {
     public static final TagKey<Item> SLINGSHOT_PROJECTILES = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "slingshot_projectiles"));
     public static final TagKey<Item> DAGGERS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "daggers"));
     public static final TagKey<Item> HAMMERS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "hammers"));
+    public static final TagKey<Item> TWIN_BLADE_SWORDS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "twin_blade_swords"));
+    public static final TagKey<Item> GREATSWORDS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "greatswords"));
     public static final TagKey<Item> BOWS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "bows"));
     public static final TagKey<Item> HEAVY_ARMORS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "heavy_armors"));
 

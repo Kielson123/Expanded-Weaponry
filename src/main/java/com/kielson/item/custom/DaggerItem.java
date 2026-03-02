@@ -1,10 +1,7 @@
 package com.kielson.item.custom;
 
-import static com.kielson.ExpandedWeaponry.MOD_ID;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.resources.Identifier;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -18,13 +15,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class DaggerItem extends Item {
-    private static final float ATTACK_DAMAGE = 1.0f;
-    private static final float ATTACK_SPEED = -1.9f;
+    private static final float ATTACK_DAMAGE = 0.5f;
+    private static final float ATTACK_SPEED = -1.8f;
     private static final float ATTACK_RANGE_MIN = 0.0f;
     private static final float ATTACK_RANGE_MAX = 2f;
 
-    public DaggerItem(ToolMaterial toolMaterial, Item.Properties settings) {
-        super(settings
+    public DaggerItem(ToolMaterial toolMaterial, Properties properties) {
+        super(properties
                 .sword(toolMaterial, ATTACK_DAMAGE, ATTACK_SPEED)
                 .durability((int) (toolMaterial.durability() * 0.85))
                 .component(DataComponents.ATTRIBUTE_MODIFIERS, createAttributeModifiers(toolMaterial))

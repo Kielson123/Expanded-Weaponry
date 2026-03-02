@@ -1,0 +1,6 @@
+{
+  "parent": "bettercombat:claymore",
+  "attributes": {
+    "range_bonus": 1.5
+  }
+}

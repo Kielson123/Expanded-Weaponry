@@ -33,6 +33,22 @@ public class ExpandedWeaponryItemGroups {
             entries.accept(ExpandedWeaponryItems.DIAMOND_HAMMER);
             entries.accept(ExpandedWeaponryItems.NETHERITE_HAMMER);
 
+            entries.accept(ExpandedWeaponryItems.WOODEN_TWIN_BLADE_SWORD);
+            entries.accept(ExpandedWeaponryItems.STONE_TWIN_BLADE_SWORD);
+            entries.accept(ExpandedWeaponryItems.COPPER_TWIN_BLADE_SWORD);
+            entries.accept(ExpandedWeaponryItems.IRON_TWIN_BLADE_SWORD);
+            entries.accept(ExpandedWeaponryItems.GOLDEN_TWIN_BLADE_SWORD);
+            entries.accept(ExpandedWeaponryItems.DIAMOND_TWIN_BLADE_SWORD);
+            entries.accept(ExpandedWeaponryItems.NETHERITE_TWIN_BLADE_SWORD);
+
+            entries.accept(ExpandedWeaponryItems.WOODEN_GREATSWORD);
+            entries.accept(ExpandedWeaponryItems.STONE_GREATSWORD);
+            entries.accept(ExpandedWeaponryItems.COPPER_GREATSWORD);
+            entries.accept(ExpandedWeaponryItems.IRON_GREATSWORD);
+            entries.accept(ExpandedWeaponryItems.GOLDEN_GREATSWORD);
+            entries.accept(ExpandedWeaponryItems.DIAMOND_GREATSWORD);
+            entries.accept(ExpandedWeaponryItems.NETHERITE_GREATSWORD);
+
             entries.accept(ExpandedWeaponryItems.LONGBOW);
             entries.accept(ExpandedWeaponryItems.SLINGSHOT);
 
@@ -85,6 +101,22 @@ public class ExpandedWeaponryItemGroups {
             content.addAfter(ExpandedWeaponryItems.NETHERITE_DAGGER, ExpandedWeaponryItems.COPPER_HAMMER);
             content.addAfter(ExpandedWeaponryItems.NETHERITE_DAGGER, ExpandedWeaponryItems.STONE_HAMMER);
             content.addAfter(ExpandedWeaponryItems.NETHERITE_DAGGER, ExpandedWeaponryItems.WOODEN_HAMMER);
+
+            content.addAfter(ExpandedWeaponryItems.NETHERITE_HAMMER, ExpandedWeaponryItems.NETHERITE_TWIN_BLADE_SWORD);
+            content.addAfter(ExpandedWeaponryItems.NETHERITE_HAMMER, ExpandedWeaponryItems.DIAMOND_TWIN_BLADE_SWORD);
+            content.addAfter(ExpandedWeaponryItems.NETHERITE_HAMMER, ExpandedWeaponryItems.GOLDEN_TWIN_BLADE_SWORD);
+            content.addAfter(ExpandedWeaponryItems.NETHERITE_HAMMER, ExpandedWeaponryItems.IRON_TWIN_BLADE_SWORD);
+            content.addAfter(ExpandedWeaponryItems.NETHERITE_HAMMER, ExpandedWeaponryItems.COPPER_TWIN_BLADE_SWORD);
+            content.addAfter(ExpandedWeaponryItems.NETHERITE_HAMMER, ExpandedWeaponryItems.STONE_TWIN_BLADE_SWORD);
+            content.addAfter(ExpandedWeaponryItems.NETHERITE_HAMMER, ExpandedWeaponryItems.WOODEN_TWIN_BLADE_SWORD);
+
+            content.addAfter(ExpandedWeaponryItems.NETHERITE_TWIN_BLADE_SWORD, ExpandedWeaponryItems.NETHERITE_GREATSWORD);
+            content.addAfter(ExpandedWeaponryItems.NETHERITE_TWIN_BLADE_SWORD, ExpandedWeaponryItems.DIAMOND_GREATSWORD);
+            content.addAfter(ExpandedWeaponryItems.NETHERITE_TWIN_BLADE_SWORD, ExpandedWeaponryItems.GOLDEN_GREATSWORD);
+            content.addAfter(ExpandedWeaponryItems.NETHERITE_TWIN_BLADE_SWORD, ExpandedWeaponryItems.IRON_GREATSWORD);
+            content.addAfter(ExpandedWeaponryItems.NETHERITE_TWIN_BLADE_SWORD, ExpandedWeaponryItems.COPPER_GREATSWORD);
+            content.addAfter(ExpandedWeaponryItems.NETHERITE_TWIN_BLADE_SWORD, ExpandedWeaponryItems.STONE_GREATSWORD);
+            content.addAfter(ExpandedWeaponryItems.NETHERITE_TWIN_BLADE_SWORD, ExpandedWeaponryItems.WOODEN_GREATSWORD);
 
             content.addAfter(Items.BOW, ExpandedWeaponryItems.LONGBOW);
             content.addAfter(Items.CROSSBOW, ExpandedWeaponryItems.SLINGSHOT);

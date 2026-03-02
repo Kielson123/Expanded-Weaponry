@@ -17,6 +17,22 @@
   "item.expanded_weaponry.diamond_hammer": "Diamentowy młot",
   "item.expanded_weaponry.netherite_hammer": "Netherytowy młot",
 
+  "item.expanded_weaponry.wooden_twin_blade_sword": "Drewniany miecz z podwójnym ostrzem",
+  "item.expanded_weaponry.stone_twin_blade_sword": "Kamienny miecz z podwójnym ostrzem",
+  "item.expanded_weaponry.copper_twin_blade_sword": "Miedziany miecz z podwójnym ostrzem",
+  "item.expanded_weaponry.iron_twin_blade_sword": "Żelazny miecz z podwójnym ostrzem",
+  "item.expanded_weaponry.golden_twin_blade_sword": "Złoty miecz z podwójnym ostrzem",
+  "item.expanded_weaponry.diamond_twin_blade_sword": "Diamentowy miecz z podwójnym ostrzem",
+  "item.expanded_weaponry.netherite_twin_blade_sword": "Netherytowy miecz z podwójnym ostrzem",
+
+  "item.expanded_weaponry.wooden_greatsword": "Drewniany wielki miecz",
+  "item.expanded_weaponry.stone_greatsword": "Kamienny wielki miecz",
+  "item.expanded_weaponry.copper_greatsword": "Miedziany wielki miecz",
+  "item.expanded_weaponry.iron_greatsword": "Żelazny wielki miecz",
+  "item.expanded_weaponry.golden_greatsword": "Złoty wielki miecz",
+  "item.expanded_weaponry.diamond_greatsword": "Diamentowy wielki miecz",
+  "item.expanded_weaponry.netherite_greatsword": "Netherytowy wielki miecz",
+
   "item.expanded_weaponry.longbow": "Długi łuk",
   "item.expanded_weaponry.slingshot": "Proca",
 

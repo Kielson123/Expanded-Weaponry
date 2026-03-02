@@ -35,6 +35,24 @@ public class ExpandedWeaponryTagProvider extends FabricTagProvider.ItemTagProvid
                 .add(ExpandedWeaponryItems.DIAMOND_HAMMER)
                 .add(ExpandedWeaponryItems.NETHERITE_HAMMER);
 
+        valueLookupBuilder(ExpandedWeaponryTags.TWIN_BLADE_SWORDS)
+                .add(ExpandedWeaponryItems.WOODEN_TWIN_BLADE_SWORD)
+                .add(ExpandedWeaponryItems.STONE_TWIN_BLADE_SWORD)
+                .add(ExpandedWeaponryItems.COPPER_TWIN_BLADE_SWORD)
+                .add(ExpandedWeaponryItems.IRON_TWIN_BLADE_SWORD)
+                .add(ExpandedWeaponryItems.GOLDEN_TWIN_BLADE_SWORD)
+                .add(ExpandedWeaponryItems.DIAMOND_TWIN_BLADE_SWORD)
+                .add(ExpandedWeaponryItems.NETHERITE_TWIN_BLADE_SWORD);
+
+        valueLookupBuilder(ExpandedWeaponryTags.GREATSWORDS)
+                .add(ExpandedWeaponryItems.WOODEN_GREATSWORD)
+                .add(ExpandedWeaponryItems.STONE_GREATSWORD)
+                .add(ExpandedWeaponryItems.COPPER_GREATSWORD)
+                .add(ExpandedWeaponryItems.IRON_GREATSWORD)
+                .add(ExpandedWeaponryItems.GOLDEN_GREATSWORD)
+                .add(ExpandedWeaponryItems.DIAMOND_GREATSWORD)
+                .add(ExpandedWeaponryItems.NETHERITE_GREATSWORD);
+
         valueLookupBuilder(ExpandedWeaponryTags.BOWS)
                 .add(ExpandedWeaponryItems.LONGBOW);
 
