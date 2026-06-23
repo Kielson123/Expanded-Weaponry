@@ -1,7 +1,7 @@
 package com.kielson.datagen;
 
 import com.kielson.item.ExpandedWeaponryItems;
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -11,16 +11,18 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import org.jspecify.annotations.NonNull;
+
 import java.util.concurrent.CompletableFuture;
 
 public class ExpandedWeaponryRecipeProvider extends FabricRecipeProvider {
 
-    public ExpandedWeaponryRecipeProvider(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> completableFuture) {
+    public ExpandedWeaponryRecipeProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> completableFuture) {
         super(output, completableFuture);
     }
 
     @Override
-    protected RecipeProvider createRecipeProvider(HolderLookup.Provider registryLookup, RecipeOutput exporter) {
+    protected @NonNull RecipeProvider createRecipeProvider(HolderLookup.@NonNull Provider registryLookup, @NonNull RecipeOutput exporter) {
         return new RecipeProvider(registryLookup, exporter) {
             @Override
             public void buildRecipes() {
@@ -269,7 +271,7 @@ public class ExpandedWeaponryRecipeProvider extends FabricRecipeProvider {
                         .pattern("# #")
                         .pattern("b #")
                         .define('#', Items.COPPER_INGOT)
-                        .define('b', Items.COPPER_BLOCK)
+                        .define('b', ItemTags.COPPER_TOOL_MATERIALS)
                         .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
                         .save(output);
                 shaped(RecipeCategory.COMBAT, ExpandedWeaponryItems.HEAVY_COPPER_LEGGINGS)
@@ -277,7 +279,7 @@ public class ExpandedWeaponryRecipeProvider extends FabricRecipeProvider {
                         .pattern("# #")
                         .pattern("# #")
                         .define('#', Items.COPPER_INGOT)
-                        .define('b', Items.COPPER_BLOCK)
+                        .define('b', ItemTags.COPPER_TOOL_MATERIALS)
                         .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
                         .save(output);
                 shaped(RecipeCategory.COMBAT, ExpandedWeaponryItems.HEAVY_COPPER_CHESTPLATE)
@@ -285,14 +287,14 @@ public class ExpandedWeaponryRecipeProvider extends FabricRecipeProvider {
                         .pattern("#b#")
                         .pattern("###")
                         .define('#', Items.COPPER_INGOT)
-                        .define('b', Items.COPPER_BLOCK)
+                        .define('b', ItemTags.COPPER_TOOL_MATERIALS)
                         .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
                         .save(output);
                 shaped(RecipeCategory.COMBAT, ExpandedWeaponryItems.HEAVY_COPPER_HELMET)
                         .pattern("#b#")
                         .pattern("# #")
                         .define('#', Items.COPPER_INGOT)
-                        .define('b', Items.COPPER_BLOCK)
+                        .define('b', ItemTags.COPPER_TOOL_MATERIALS)
                         .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
                         .save(output);
 

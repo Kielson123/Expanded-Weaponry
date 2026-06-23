@@ -1,14 +1,18 @@
 plugins {
-	id 'fabric-loom' version "${loom_version}"
+	id 'net.fabricmc.fabric-loom' version "${loom_version}"
 	id 'maven-publish'
 	id "com.modrinth.minotaur" version "2.+"
 }
 
-version = project.mod_version
+version = "${project.mod_version}-${project.minecraft_version}"
 group = project.maven_group
 
 base {
 	archivesName = project.archives_base_name
+}
+
+loom {
+	accessWidenerPath = file("src/main/resources/expanded_weaponry.accesswidener")
 }
 
 repositories {
@@ -18,14 +22,6 @@ repositories {
 			includeGroup "maven.modrinth"
 		}
 	}
-	maven {
-		name = 'ParchmentMC'
-		url = 'https://maven.parchmentmc.org'
-	}
-}
-
-loom {
-	accessWidenerPath = file("src/main/resources/expanded_weaponry.accesswidener")
 }
 
 fabricApi {
@@ -33,43 +29,40 @@ fabricApi {
 		client = true
 	}
 }
+
 dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
-	include(modApi("maven.modrinth:kielsons-api:${project.kielsonsapi_version}"))
-
-	mappings loom.layered() {
-		officialMojangMappings()
-		parchment("org.parchmentmc.data:parchment-1.21.11:2025.12.20@zip")
-	}
+	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+	include(api("maven.modrinth:kielsons-api:${project.kielsonsapi_version}-${project.minecraft_version}"))
 }
 
 processResources {
 	inputs.property "version", project.version
 
 	filesMatching("fabric.mod.json") {
-		expand "version": inputs.properties.version
+		expand "version": version
 	}
 }
 
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = 21
+	it.options.release = 25
 }
 
 java {
 	withSourcesJar()
 
-	sourceCompatibility = JavaVersion.VERSION_21
-	targetCompatibility = JavaVersion.VERSION_21
+	sourceCompatibility = JavaVersion.VERSION_25
+	targetCompatibility = JavaVersion.VERSION_25
 }
 
 jar {
-	inputs.property "archivesName", project.base.archivesName
+	def projectName = project.name
+	inputs.property "projectName", projectName
 
 	from("LICENSE") {
-		rename { "${it}_${inputs.properties.archivesName}"}
+		rename { "${it}_$projectName"}
 	}
 }
 
@@ -89,9 +82,10 @@ publishing {
 modrinth {
 	token = project.modrinth_token
 	projectId = "q8rZUpjS"
-	versionNumber = String.valueOf(project.mod_version)
+	versionNumber = "${project.mod_version}-${project.minecraft_version}"
+	versionName = "Expanded Weaponry ${project.mod_version} - ${project.minecraft_version}"
 	versionType = project.version_type
-	uploadFile = remapJar
+	uploadFile = jar
 	gameVersions = [String.valueOf(project.minecraft_version)]
 	loaders = ["fabric"]
 	dependencies {
