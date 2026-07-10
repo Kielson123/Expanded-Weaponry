@@ -21,7 +21,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#minecraft:planks"
+            "items": "#minecraft:wooden_tool_materials"
           }
         ]
       },

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_diamond": {
+    "diamond": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:diamond"
+            "items": "#minecraft:diamond_tool_materials"
           }
         ]
       },
@@ -31,7 +31,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_diamond",
+      "diamond",
       "has_stick"
     ]
   ],

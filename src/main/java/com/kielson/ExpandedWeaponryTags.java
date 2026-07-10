@@ -15,6 +15,7 @@ public class ExpandedWeaponryTags {
     public static final TagKey<Item> GREATSWORDS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "greatswords"));
     public static final TagKey<Item> BOWS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "bows"));
     public static final TagKey<Item> HEAVY_ARMORS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "heavy_armors"));
+    public static final TagKey<Item> SHIELDS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "shields"));
 
     public static void initialize() {}
 }

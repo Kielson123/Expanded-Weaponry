@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "m": "#minecraft:stone_tool_materials",
+    "p": "#minecraft:planks"
+  },
+  "pattern": [
+    "pmp",
+    "ppp",
+    " p "
+  ],
+  "result": {
+    "id": "expanded_weaponry:stone_shield"
+  }
+}

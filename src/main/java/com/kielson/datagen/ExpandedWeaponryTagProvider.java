@@ -53,12 +53,22 @@ public class ExpandedWeaponryTagProvider extends FabricTagsProvider.ItemTagsProv
                 .add(ExpandedWeaponryItems.DIAMOND_GREATSWORD.builtInRegistryHolder().key())
                 .add(ExpandedWeaponryItems.NETHERITE_GREATSWORD.builtInRegistryHolder().key());
 
+        this.builder(ExpandedWeaponryTags.SHIELDS)
+                .add(ExpandedWeaponryItems.WOODEN_SHIELD.builtInRegistryHolder().key())
+                .add(ExpandedWeaponryItems.STONE_SHIELD.builtInRegistryHolder().key())
+                .add(ExpandedWeaponryItems.COPPER_SHIELD.builtInRegistryHolder().key())
+                .add(ExpandedWeaponryItems.IRON_SHIELD.builtInRegistryHolder().key())
+                .add(ExpandedWeaponryItems.GOLDEN_SHIELD.builtInRegistryHolder().key())
+                .add(ExpandedWeaponryItems.DIAMOND_SHIELD.builtInRegistryHolder().key())
+                .add(ExpandedWeaponryItems.NETHERITE_SHIELD.builtInRegistryHolder().key());
+
         this.builder(ExpandedWeaponryTags.BOWS)
                 .add(ExpandedWeaponryItems.LONGBOW.builtInRegistryHolder().key());
 
         this.builder(ExpandedWeaponryTags.SLINGSHOT_PROJECTILES)
                 .add(Items.IRON_NUGGET.builtInRegistryHolder().key())
                 .add(Items.GOLD_NUGGET.builtInRegistryHolder().key())
+                .add(Items.COPPER_NUGGET.builtInRegistryHolder().key())
                 .add(Items.FLINT.builtInRegistryHolder().key());
 
         this.builder(ExpandedWeaponryTags.HEAVY_ARMORS)

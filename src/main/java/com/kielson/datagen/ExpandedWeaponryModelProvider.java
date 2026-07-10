@@ -31,5 +31,8 @@ public class ExpandedWeaponryModelProvider extends FabricModelProvider {
         for (Item item : ExpandedWeaponryItems.ITEMS_CUSTOM) {
             itemModelGenerator.declareCustomModelItem(item);
         }
+        for (Item item : ExpandedWeaponryItems.ITEMS_SHIELD) {
+            itemModelGenerator.generateShield(item);
+        }
     }
 }

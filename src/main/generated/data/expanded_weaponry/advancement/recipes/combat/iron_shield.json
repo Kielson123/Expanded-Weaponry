@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "expanded_weaponry:iron_shield"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "iron": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:iron_tool_materials"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "iron",
+      "planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "expanded_weaponry:iron_shield"
+    ]
+  }
+}

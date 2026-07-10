@@ -18,7 +18,7 @@ import static com.kielson.KielsonsAPIComponents.TWO_HANDED;
 
 public class TwinBladeSwordItem extends Item {
     private static final float ATTACK_DAMAGE = 2.0f;
-    private static final float ATTACK_SPEED = -2.25f;
+    private static final float ATTACK_SPEED = -2.15f;
     private static final float ATTACK_RANGE_MIN = 0.0f;
     private static final float ATTACK_RANGE_MAX = 3f;
 

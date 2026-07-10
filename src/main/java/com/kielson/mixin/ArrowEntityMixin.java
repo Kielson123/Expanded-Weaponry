@@ -32,26 +32,26 @@ public abstract class ArrowEntityMixin extends AbstractArrow {
         super(type, owner, world, stack, shotFrom);
     }
     @Inject(method = "<init>(Lnet/minecraft/world/level/Level;DDDLnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)V", at = @At("RETURN"))
-    protected void ExpandedWeaponry$init(Level world, double x, double y, double z, ItemStack stack, ItemStack shotFrom, CallbackInfo ci){
-        this.stack = stack;
-        this.shotFrom = shotFrom;
-        this.world = world;
+    protected void ExpandedWeaponry$init(Level level, double x, double y, double z, ItemStack pickupItemStack, ItemStack firedFromWeapon, CallbackInfo ci){
+        this.stack = pickupItemStack;
+        this.shotFrom = firedFromWeapon;
+        this.world = level;
     }
 
     @Inject(method = "<init>(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)V", at = @At("RETURN"))
-    protected void ExpandedWeaponry$init(Level world, LivingEntity owner, ItemStack stack, ItemStack shotFrom, CallbackInfo ci){
-        this.stack = stack;
-        this.shotFrom = shotFrom;
-        this.world = world;
+    protected void ExpandedWeaponry$init(Level level, LivingEntity owner, ItemStack pickupItemStack, ItemStack firedFromWeapon, CallbackInfo ci){
+        this.stack = pickupItemStack;
+        this.shotFrom = firedFromWeapon;
+        this.world = level;
     }
 
     @Inject(method = "<init>(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V", at = @At("RETURN"))
-    protected void ExpandedWeaponry$init(EntityType entityType, Level world, CallbackInfo ci){
-        this.world = world;
+    protected void ExpandedWeaponry$init(EntityType type, Level level, CallbackInfo ci){
+        this.world = level;
     }
 
     @Inject(method = "doPostHurtEffects", at = @At("HEAD"))
-    protected void ExpandedWeaponry$onHit(LivingEntity target, CallbackInfo ci){
+    protected void ExpandedWeaponry$onHit(LivingEntity mob, CallbackInfo ci){
         if(stack == null || shotFrom == null){
             return;
         }

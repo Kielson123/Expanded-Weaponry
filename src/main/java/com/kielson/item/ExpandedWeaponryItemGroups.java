@@ -58,6 +58,13 @@ public class ExpandedWeaponryItemGroups {
                 output.accept(ExpandedWeaponryItems.LONGBOW);
                 output.accept(ExpandedWeaponryItems.SLINGSHOT);
 
+                output.accept(ExpandedWeaponryItems.WOODEN_SHIELD);
+                output.accept(ExpandedWeaponryItems.STONE_SHIELD);
+                output.accept(ExpandedWeaponryItems.COPPER_SHIELD);
+                output.accept(ExpandedWeaponryItems.IRON_SHIELD);
+                output.accept(ExpandedWeaponryItems.GOLDEN_SHIELD);
+                output.accept(ExpandedWeaponryItems.DIAMOND_SHIELD);
+                output.accept(ExpandedWeaponryItems.NETHERITE_SHIELD);
 
                 output.accept(ExpandedWeaponryItems.HEAVY_COPPER_HELMET);
                 output.accept(ExpandedWeaponryItems.HEAVY_COPPER_CHESTPLATE);
@@ -120,6 +127,14 @@ public class ExpandedWeaponryItemGroups {
             content.insertAfter(ExpandedWeaponryItems.NETHERITE_TWIN_BLADE_SWORD, ExpandedWeaponryItems.COPPER_GREATSWORD);
             content.insertAfter(ExpandedWeaponryItems.NETHERITE_TWIN_BLADE_SWORD, ExpandedWeaponryItems.STONE_GREATSWORD);
             content.insertAfter(ExpandedWeaponryItems.NETHERITE_TWIN_BLADE_SWORD, ExpandedWeaponryItems.WOODEN_GREATSWORD);
+
+            content.insertAfter(Items.MACE, ExpandedWeaponryItems.NETHERITE_SHIELD);
+            content.insertAfter(Items.MACE, ExpandedWeaponryItems.DIAMOND_SHIELD);
+            content.insertAfter(Items.MACE, ExpandedWeaponryItems.GOLDEN_SHIELD);
+            content.insertAfter(Items.MACE, ExpandedWeaponryItems.IRON_SHIELD);
+            content.insertAfter(Items.MACE, ExpandedWeaponryItems.COPPER_SHIELD);
+            content.insertAfter(Items.MACE, ExpandedWeaponryItems.STONE_SHIELD);
+            content.insertAfter(Items.MACE, ExpandedWeaponryItems.WOODEN_SHIELD);
 
             content.insertAfter(Items.BOW, ExpandedWeaponryItems.LONGBOW);
             content.insertAfter(Items.CROSSBOW, ExpandedWeaponryItems.SLINGSHOT);

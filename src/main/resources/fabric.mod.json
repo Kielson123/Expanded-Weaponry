@@ -31,8 +31,7 @@
 		"fabricloader": ">=0.19.3",
 		"minecraft": "~26.2",
 		"java": ">=25",
-		"fabric-api": ">=0.152.2+26.2",
-		"kielsonsapi": "~1.0"
+		"fabric-api": ">=0.152.2+26.2"
 	},
 	"accessWidener" : "expanded_weaponry.accesswidener"
 }

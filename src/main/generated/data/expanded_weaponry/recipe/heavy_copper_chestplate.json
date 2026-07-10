@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "#": "minecraft:copper_ingot",
+    "#": "#minecraft:copper_tool_materials",
     "b": "minecraft:copper_block"
   },
   "pattern": [
@@ -11,7 +11,6 @@
     "###"
   ],
   "result": {
-    "count": 1,
     "id": "expanded_weaponry:heavy_copper_chestplate"
   }
 }

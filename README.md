@@ -83,8 +83,9 @@ Heavier variant of armor. Gives more protection but slows down the user and is m
 
 
 # Future plans
-1. Light armor — less expensive to craft, less protection
-2. Shield rework - shields will block % of damage
-3. New Shields — due to the rework, shields will have material tiers (wooden, stone, iron, gold, diamond, and netherite). Also, possibly new variants
+✅Heavy armor - more expensive, slower walking speed, much more protection</br>
+❌Light armor - less expensive to craft, less protection</br>
+✅Shield rework - shields will block % of damage</br>
+✅New Shields - due to the rework, shields will have material tiers (wooden, stone, iron, gold, diamond, and netherite). Also, possibly new variants
 
 For now, no date is present since I'm quite busy with life.

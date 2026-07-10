@@ -75,6 +75,22 @@ public class ExpandedWeaponryItems {
     public static final Item NETHERITE_GREATSWORD = ItemHelper.registerItem(MOD_ID, "netherite_greatsword",
             properties -> new GreatswordItem(ToolMaterial.NETHERITE, properties), new Item.Properties());
 
+    //Shields
+    public static final Item WOODEN_SHIELD = ItemHelper.registerItem(MOD_ID, "wooden_shield",
+            properties -> new CustomShield(ExpandedWeaponryShieldMaterials.WOOD, properties), new Item.Properties());
+    public static final Item STONE_SHIELD = ItemHelper.registerItem(MOD_ID, "stone_shield",
+            properties -> new CustomShield(ExpandedWeaponryShieldMaterials.STONE, properties), new Item.Properties());
+    public static final Item COPPER_SHIELD = ItemHelper.registerItem(MOD_ID, "copper_shield",
+            properties -> new CustomShield(ExpandedWeaponryShieldMaterials.COPPER, properties), new Item.Properties());
+    public static final Item IRON_SHIELD = ItemHelper.registerItem(MOD_ID, "iron_shield",
+            properties -> new CustomShield(ExpandedWeaponryShieldMaterials.IRON, properties), new Item.Properties());
+    public static final Item GOLDEN_SHIELD = ItemHelper.registerItem(MOD_ID, "golden_shield",
+            properties -> new CustomShield(ExpandedWeaponryShieldMaterials.GOLD, properties), new Item.Properties());
+    public static final Item DIAMOND_SHIELD = ItemHelper.registerItem(MOD_ID, "diamond_shield",
+            properties -> new CustomShield(ExpandedWeaponryShieldMaterials.DIAMOND, properties), new Item.Properties());
+    public static final Item NETHERITE_SHIELD = ItemHelper.registerItem(MOD_ID, "netherite_shield",
+            properties -> new CustomShield(ExpandedWeaponryShieldMaterials.NETHRITE, properties), new Item.Properties());
+
     //Ranged
     public static final Item LONGBOW = ItemHelper.registerItem(MOD_ID, "longbow",
             properties -> new CustomBow(new RangedWeaponStats(8.5, 1.8, 3.75), properties.durability(428)), new Item.Properties());
@@ -141,6 +157,9 @@ public class ExpandedWeaponryItems {
     };
     public static final Item[] ITEMS_CUSTOM = new Item[]{
 
+    };
+    public static final Item[] ITEMS_SHIELD = new Item[]{
+            WOODEN_SHIELD, STONE_SHIELD, COPPER_SHIELD, IRON_SHIELD, GOLDEN_SHIELD, DIAMOND_SHIELD, NETHERITE_SHIELD
     };
 
     public static void initialize() {}

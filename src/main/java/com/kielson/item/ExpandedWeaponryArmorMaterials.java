@@ -12,11 +12,6 @@ import net.minecraft.world.item.equipment.ArmorMaterials;
 import net.minecraft.world.item.equipment.EquipmentAsset;
 
 public interface ExpandedWeaponryArmorMaterials extends ArmorMaterials {
-    /*  i - durability
-        j - enchantability
-        f - toughness
-        g - knockback resistance    */
-
 
     //Heavy
     ArmorMaterial HEAVY_COPPER = new ArmorMaterial((int) (11*1.25), ArmorMaterials.makeDefense(2, 4, 5, 3, 5),

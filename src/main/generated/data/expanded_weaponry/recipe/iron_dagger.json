@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "b": "minecraft:iron_ingot",
+    "b": "#minecraft:iron_tool_materials",
     "s": "minecraft:stick"
   },
   "pattern": [
@@ -10,7 +10,6 @@
     "s"
   ],
   "result": {
-    "count": 1,
     "id": "expanded_weaponry:iron_dagger"
   }
 }
