@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/shield",
+  "textures": {
+    "particle": "expanded_weaponry:item/diamond_shield"
+  }
+}

@@ -3,7 +3,10 @@
   "package": "com.kielson.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "ArrowEntityMixin"
+    "ArrowEntityMixin",
+    "CreativeModeTabMixin",
+    "LivingEntityMixin",
+    "ShieldDecorationRecipeMixin"
   ],
   "injectors": {
     "defaultRequire": 1

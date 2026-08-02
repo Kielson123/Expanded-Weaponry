@@ -94,7 +94,6 @@ public class ExpandedWeaponryItemGroups {
             }).build();
 
     private static void addItemsToCombat(){
-
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT).register(content -> {
             content.insertAfter(Items.NETHERITE_AXE, ExpandedWeaponryItems.NETHERITE_DAGGER);
             content.insertAfter(Items.NETHERITE_AXE, ExpandedWeaponryItems.DIAMOND_DAGGER);

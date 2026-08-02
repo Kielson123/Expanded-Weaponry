@@ -142,25 +142,43 @@ public class ExpandedWeaponryItems {
     public static final Item HEAVY_NETHERITE_BOOTS = ItemHelper.registerItem(MOD_ID, "heavy_netherite_boots", properties -> new HeavyArmorItem(
             ExpandedWeaponryArmorMaterials.HEAVY_NETHERITE, ArmorType.BOOTS, properties), new Item.Properties().humanoidArmor(ExpandedWeaponryArmorMaterials.HEAVY_NETHERITE, ArmorType.BOOTS).fireResistant());
 
+    public static void initialize() {
+        ItemHelper.registerDynamicShield(MOD_ID, "wooden_shield");
+        ItemHelper.registerDynamicShield(MOD_ID, "stone_shield");
+        ItemHelper.registerDynamicShield(MOD_ID, "copper_shield");
+        ItemHelper.registerDynamicShield(MOD_ID, "iron_shield");
+        ItemHelper.registerDynamicShield(MOD_ID, "golden_shield");
+        ItemHelper.registerDynamicShield(MOD_ID, "diamond_shield");
+        ItemHelper.registerDynamicShield(MOD_ID, "netherite_shield");
+    }
 
-
-    //Model generation
-    public static final Item[] ITEMS_HANDHELD = new Item[]{
-            WOODEN_DAGGER, STONE_DAGGER, COPPER_DAGGER, IRON_DAGGER, GOLDEN_DAGGER, DIAMOND_DAGGER, NETHERITE_DAGGER,
-    };
-    public static final Item[] ITEMS_DEFAULT = new Item[]{
-            HEAVY_COPPER_HELMET, HEAVY_COPPER_CHESTPLATE, HEAVY_COPPER_LEGGINGS, HEAVY_COPPER_BOOTS,
-            HEAVY_IRON_HELMET, HEAVY_IRON_CHESTPLATE, HEAVY_IRON_LEGGINGS, HEAVY_IRON_BOOTS,
-            HEAVY_GOLDEN_HELMET, HEAVY_GOLDEN_CHESTPLATE, HEAVY_GOLDEN_LEGGINGS, HEAVY_GOLDEN_BOOTS,
-            HEAVY_DIAMOND_HELMET, HEAVY_DIAMOND_CHESTPLATE, HEAVY_DIAMOND_LEGGINGS, HEAVY_DIAMOND_BOOTS,
-            HEAVY_NETHERITE_HELMET, HEAVY_NETHERITE_CHESTPLATE, HEAVY_NETHERITE_LEGGINGS, HEAVY_NETHERITE_BOOTS,
-    };
-    public static final Item[] ITEMS_CUSTOM = new Item[]{
-
-    };
-    public static final Item[] ITEMS_SHIELD = new Item[]{
-            WOODEN_SHIELD, STONE_SHIELD, COPPER_SHIELD, IRON_SHIELD, GOLDEN_SHIELD, DIAMOND_SHIELD, NETHERITE_SHIELD
-    };
-
-    public static void initialize() {}
+    public static class Groups{
+        public static final Item[] DAGGERS = new Item[]{
+                WOODEN_DAGGER, STONE_DAGGER, COPPER_DAGGER, IRON_DAGGER, GOLDEN_DAGGER, DIAMOND_DAGGER, NETHERITE_DAGGER
+        };
+        public static final Item[] HAMMERS = new Item[]{
+                WOODEN_HAMMER, STONE_HAMMER, COPPER_HAMMER, IRON_HAMMER, GOLDEN_HAMMER, DIAMOND_HAMMER, NETHERITE_HAMMER
+        };
+        public static final Item[] TWIN_BLADE_SWORDS = new Item[]{
+                WOODEN_TWIN_BLADE_SWORD, STONE_TWIN_BLADE_SWORD, COPPER_TWIN_BLADE_SWORD, IRON_TWIN_BLADE_SWORD, GOLDEN_TWIN_BLADE_SWORD, DIAMOND_TWIN_BLADE_SWORD, NETHERITE_TWIN_BLADE_SWORD
+        };
+        public static final Item[] GREATSWORDS = new Item[]{
+                WOODEN_GREATSWORD, STONE_GREATSWORD, COPPER_GREATSWORD, IRON_GREATSWORD, GOLDEN_GREATSWORD, DIAMOND_GREATSWORD, NETHERITE_GREATSWORD
+        };
+        public static final Item[] SHIELDS = new Item[]{
+                WOODEN_SHIELD, STONE_SHIELD, COPPER_SHIELD, IRON_SHIELD, GOLDEN_SHIELD, DIAMOND_SHIELD, NETHERITE_SHIELD
+        };
+        public static final Item[] HEAVY_HELMETS = new Item[]{
+                HEAVY_COPPER_HELMET, HEAVY_IRON_HELMET, HEAVY_GOLDEN_HELMET, HEAVY_DIAMOND_HELMET, HEAVY_NETHERITE_HELMET
+        };
+        public static final Item[] HEAVY_CHESTPLATES = new Item[]{
+                HEAVY_COPPER_CHESTPLATE, HEAVY_IRON_CHESTPLATE, HEAVY_GOLDEN_CHESTPLATE, HEAVY_DIAMOND_CHESTPLATE, HEAVY_NETHERITE_CHESTPLATE
+        };
+        public static final Item[] HEAVY_LEGGINGS = new Item[]{
+                HEAVY_COPPER_LEGGINGS, HEAVY_IRON_LEGGINGS, HEAVY_GOLDEN_LEGGINGS, HEAVY_DIAMOND_LEGGINGS, HEAVY_NETHERITE_LEGGINGS
+        };
+        public static final Item[] HEAVY_BOOTS = new Item[]{
+                HEAVY_COPPER_BOOTS, HEAVY_IRON_BOOTS, HEAVY_GOLDEN_BOOTS, HEAVY_DIAMOND_BOOTS, HEAVY_NETHERITE_BOOTS
+        };
+    }
 }
