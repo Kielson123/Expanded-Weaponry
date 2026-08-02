@@ -1,7 +1,7 @@
 # Overview
 Expanded Weaponry is a mod that enhances Minecraft combat in many ways. Its main focus is on providing more variety and choice in equipment.
 
-I highly advise combining this mod with [Better Combat](https://modrinth.com/mod/better-combat) as it offers cool animations that enhance gameplay and enable you to dual-wield weapons.
+I highly advise combining this mod with [Better Combat](https://modrinth.com/mod/better-combat)(if avaible for the selected version) as it offers cool animations that enhance gameplay and enable you to dual-wield weapons.
 
 
 # New items
@@ -56,7 +56,7 @@ Heavier variant of the bow.
 ### Slingshot
 ![Crafting recipe of the slingshot](https://cdn.modrinth.com/data/cached_images/b768b72a3d7d9f9b9dbc574a0931e2d36681dcd3.png)
 
-Light and fast ranged weapon. Uses flint, iron nuggets and gold nuggets as ammunition.
+Light and fast ranged weapon. Very cheap to use - it uses flint and iron/gold/copper nuggets as ammunition.
 - short draw time
 - low damage
 - low projectile velocity
@@ -80,12 +80,27 @@ Heavier variant of armor. Gives more protection but slows down the user and is m
 
 ![Armors](https://cdn.modrinth.com/data/cached_images/5bc493d16bdf2b58a4e30b410cb909ba0362803f.png)
 </details>
+<details>
+<summary>Shields</summary>
+
+### Shields Material Tiers
+![Crafting recipe of the shields](https://cdn.modrinth.com/data/cached_images/cc3e532c8b550e992b603cd18b0a88c7f92b0ec4.png)
+
+Material tiers of shields. With every tier the shields block higher percentage of damage, have less axe disable cooldown and block more base damage.
+
+![Shields in inventory](https://cdn.modrinth.com/data/cached_images/5343e15b0e8131a8c560d6729a9310924fa5b396.png)
+
+Shield stats:
+- Min. **x** Damage Blocked
+- **x**% Damage Blocked
+- **x**s of Disabled Cooldown
+
+Example shield stats for Iron Shield:</br>
+![Example shield stats (Iron Shield)](https://cdn.modrinth.com/data/cached_images/4a80cfcfa567036fd2ca1e621e243a4f28edc471.png)
+</details>
 
 
 # Future plans
-✅Heavy armor - more expensive, slower walking speed, much more protection</br>
-❌Light armor - less expensive to craft, less protection</br>
-✅Shield rework - shields will block % of damage</br>
-✅New Shields - due to the rework, shields will have material tiers (wooden, stone, iron, gold, diamond, and netherite). Also, possibly new variants
+- Light armor - less expensive to craft, less protection</br>
 
-For now, no date is present since I'm quite busy with life.
+Mod is updated very sporadically since I work on it in my spare time and I'm quite busy with life.
