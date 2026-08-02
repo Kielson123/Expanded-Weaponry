@@ -10,7 +10,7 @@
 	"contact": {
 		"sources": "https://github.com/Kielson123/Expanded-Weaponry"
 	},
-	"license": "All-Rights-Reserved",
+	"license": "MIT",
 	"icon": "assets/expanded_weaponry/icon.png",
 	"environment": "*",
 	"entrypoints": {
